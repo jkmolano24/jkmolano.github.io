@@ -1,0 +1,1492 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Juan Camilo Molano Arquitectura</title>
+<meta name="description" content="Portafolio de arquitectura de Juan Camilo Molano. Universidad Nacional de Colombia.">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style>
+
+<style>
+@font-face{font-family:"Archivo";src:url(archivo-latin-wdth-normal.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:"Archivo";src:url(archivo-latin-wdth-italic.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+@font-face{font-family:"Archivo";src:url(archivo-latin-ext-wdth-normal.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1EFF,U+20A0-20C0}
+@font-face{font-family:"Schibsted Grotesk";src:url(schibsted-grotesk-latin-wght-normal.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(ibm-plex-mono-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(ibm-plex-mono-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+</style>
+<style>
+/* Layout: dark editorial spreads (renders) alternating with light gridded "láminas" (drawings);
+   giant type that carries or crosses the images; a diagonal-strip project index. Single deliberate dark look. */
+:root{
+  color-scheme:dark;
+  --ink:#0d0c0c;          /* carbón */
+  --ink-2:#171515;
+  --ink-3:#221f1f;
+  --bone:#eeeae3;         /* blanco hueso */
+  --bone-dim:#a8a29a;
+  --paper:#f3f1ec;        /* lámina */
+  --paper-line:#dcd8d0;
+  --paper-ink:#151313;
+  --paper-dim:#6b655e;
+  --wine:#6d0a1f;         /* burdeos */
+  --wine-hi:#9c1830;
+  --signal:#e2472b;       /* marcador de collage, uso mínimo */
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-serif:"Archivo","Helvetica Neue",Arial,sans-serif; /* emphasis = Archivo italic, same family */
+  --f-body:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gut-l:max(16px,env(safe-area-inset-left,0px));
+  --gut-r:max(16px,env(safe-area-inset-right,0px));
+  --pad:clamp(16px,4vw,56px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --nav:58px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+h1,h2,h3,h4{margin:0;font-family:var(--f-display);text-wrap:balance;font-weight:800}
+p{margin:0}
+body:not(.en) .en,body.en .es{display:none!important}
+.wrap{padding-left:calc(var(--gut-l) + var(--pad) - 16px);padding-right:calc(var(--gut-r) + var(--pad) - 16px);max-width:1520px;margin-inline:auto}
+.mono{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;line-height:1.4}
+.serif{font-family:var(--f-serif);font-style:italic;font-weight:300;font-stretch:100%;letter-spacing:-.02em;padding-bottom:.06em}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:90;background:var(--ink)}
+
+/* ========== NAV ========== */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;height:var(--nav);background:rgba(13,12,12,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(238,234,227,.1)}
+.nav .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;white-space:nowrap}
+.brand b{display:grid;place-items:center;height:30px;padding:0 7px;border:1.5px solid var(--bone);font-family:var(--f-display);font-weight:900;font-stretch:125%;font-size:14px;letter-spacing:.02em;line-height:1}
+.brand span{color:var(--bone-dim)}
+.brand:hover b{background:var(--bone);color:var(--ink)}
+.nav ul{display:flex;gap:4px;margin:0 auto;padding:0;list-style:none}
+.nav ul a{display:block;padding:8px 12px;text-decoration:none;color:var(--bone-dim);transition:color .2s}
+.nav ul a:hover,.nav ul a[aria-current="true"]{color:var(--bone)}
+.nav ul a[aria-current="true"]::before{content:"/ ";color:var(--wine-hi)}
+.nav__right{display:flex;align-items:center;gap:14px;margin-left:auto}
+.count{color:var(--bone-dim);font-variant-numeric:tabular-nums;min-width:52px;text-align:right}
+.lang{display:flex;border:1px solid rgba(238,234,227,.3)}
+.lang button{padding:6px 9px}
+.lang button[aria-pressed="true"]{background:var(--bone);color:var(--ink)}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--wine-hi);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:900px){.nav ul{display:none}.count{display:none}}
+
+/* ========== REVEAL ========== */
+.js .rv{opacity:0;transform:translateY(28px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .9s var(--ease),transform 1.1s var(--ease);transition-delay:calc(var(--d,0)*90ms)}
+.js .wipe>img{clip-path:inset(0 0 100% 0)}
+.js .wipe.in>img{clip-path:inset(0 0 0 0);transition:clip-path 1.4s var(--ease),transform .1s linear}
+.line{display:block;overflow:hidden;padding-bottom:.04em}
+.line>span{display:block}
+.js .split .line>span{transform:translateY(105%)}
+.js .split.in .line>span{transform:none;transition:transform 1.1s var(--ease);transition-delay:calc(var(--i,0)*110ms + 120ms)}
+
+/* ========== HERO ========== */
+.hero{position:relative;padding-block:clamp(28px,4vw,48px) 0;overflow:hidden}
+.hero__top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--bone-dim);margin-bottom:clamp(12px,2vw,24px)}
+.hero__word{font-family:var(--f-display);font-weight:900;font-stretch:125%;font-size:clamp(70px,19.6vw,330px);line-height:.8;letter-spacing:-.055em;margin-left:-.04em;
+  background:url(interludio-render.webp) 50% 40%/cover no-repeat;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+  filter:saturate(1.15) contrast(1.05)}
+.hero__word span{display:inline-block}
+.js .hero__word span{transform:translateY(100%);opacity:0}
+.js .loaded .hero__word span{transform:none;opacity:1;transition:transform 1.2s var(--ease),opacity .6s;transition-delay:calc(var(--i)*70ms)}
+.hero__sub{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(16px,3vw,48px);align-items:end;margin-top:clamp(16px,2.4vw,32px);padding-bottom:clamp(28px,4vw,48px)}
+.hero__name{font-family:var(--f-display);font-weight:300;font-stretch:100%;font-size:clamp(28px,3.6vw,54px);line-height:1;letter-spacing:-.03em}
+.hero__name .serif{font-size:1.08em;color:var(--wine-hi)}
+.hero__lead{color:var(--bone-dim);max-width:44ch;font-size:16px}
+.hero__scroll{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--bone-dim)}
+.hero__scroll i{display:block;width:1px;height:48px;background:linear-gradient(var(--bone),transparent);animation:drip 2.2s var(--ease) infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.hero__img{position:relative;height:min(78vh,760px);min-height:320px;overflow:hidden}
+.hero__img img{width:100%;height:118%;object-fit:cover;object-position:50% 40%;will-change:transform}
+.hero__img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--ink) 0%,transparent 22%,transparent 70%,rgba(13,12,12,.85) 100%)}
+.card{position:absolute;z-index:2;left:calc(var(--gut-l) + var(--pad) - 16px);bottom:clamp(16px,3vw,40px);width:min(380px,calc(100% - 32px));background:rgba(13,12,12,.48);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid rgba(238,234,227,.22);padding:16px 18px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0}
+.card dt{color:var(--bone-dim)}
+.card dd{margin:0;font-size:14.5px}
+.hero__vert{position:absolute;z-index:2;right:calc(var(--gut-r) + var(--pad) - 16px);top:50%;transform:translateY(-50%);writing-mode:vertical-rl;color:var(--bone);letter-spacing:.5em}
+@media (max-width:820px){.hero__sub{grid-template-columns:1fr}.hero__scroll{display:none}.hero__vert{display:none}.hero__img{height:62vh}}
+
+
+/* ========== HERO: brutalist collage poster ========== */
+.bx{position:relative;overflow:hidden;padding-block:clamp(16px,2.4vw,28px) clamp(28px,4vw,52px);border-bottom:1px solid rgba(238,234,227,.12)}
+.bx__top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--bone-dim);position:relative;z-index:9}
+.bx__stage{position:relative;height:clamp(560px,80vh,880px);margin-top:clamp(12px,2vw,24px)}
+.pc{position:absolute;transform:translate3d(calc(var(--px,0)*var(--z,0)*1px),calc(var(--py,0)*var(--z,0)*1px),0);transition:transform .9s var(--ease)}
+.pc>.in{position:relative;width:100%;height:100%}
+.ph{overflow:hidden;background:var(--ink-3)}
+.ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.35) brightness(.82)}
+.ph::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(13,12,12,.6) 1px,transparent 1.35px);background-size:4px 4px;mix-blend-mode:multiply;pointer-events:none}
+.ph.raw img{filter:grayscale(1) contrast(1.1)}
+.ph.raw::after{display:none}
+.blk{background:var(--wine)}
+.blk.sig{background:var(--signal)}
+.dots{background-image:radial-gradient(var(--signal) 1.8px,transparent 2.1px);background-size:10px 10px}
+.hb{display:grid;gap:6px;align-content:start}
+.hb i{display:block;height:10px;background:var(--bone)}
+.hb i.r{background:var(--signal)}
+.bx__lines{position:absolute;inset:0;width:100%;height:100%;z-index:6;pointer-events:none}
+.bx__lines line,.bx__lines path{fill:none;stroke:var(--bone);stroke-width:1;vector-effect:non-scaling-stroke;opacity:.6}
+.bx__lines .r{stroke:var(--signal);opacity:1}
+.bx__lines text{font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;fill:var(--bone-dim)}
+.wd{font-family:var(--f-display);font-weight:900;font-stretch:125%;line-height:.8;letter-spacing:-.06em;color:var(--bone);white-space:nowrap;font-size:clamp(70px,15.4vw,236px);z-index:8;pointer-events:none}
+.wd .in{display:block;overflow:hidden;padding-bottom:.02em}
+.wd .in>span{display:block}
+.note{z-index:8;color:var(--bone);display:grid;gap:3px}
+.note b{font-family:var(--f-mono);font-weight:500;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--signal);margin-bottom:4px}
+.note span{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--bone-dim);font-variant-numeric:tabular-nums}
+.note span em{font-style:normal;color:var(--bone)}
+/* positions (desktop) */
+.p-a{left:0;top:17%;width:47%;height:40%;z-index:2}
+.p-b{right:7%;top:0;width:25%;height:54%;z-index:3}
+.p-c{left:41%;top:60%;width:17%;height:32%;z-index:4}
+.p-d{right:0;bottom:3%;width:16%;height:36%;z-index:3}
+.p-w1{left:31%;top:5%;width:11%;height:32%;z-index:1}
+.p-w2{right:23%;top:47%;width:21%;height:9%;z-index:4}
+.p-s{left:57%;top:36%;width:2.6%;height:14%;z-index:5}
+.p-dots{right:33%;top:2%;width:130px;height:130px;z-index:4}
+.p-bars{left:3%;bottom:7%;width:23%;z-index:5}
+.p-w-a{left:-.04em;top:1%}
+.p-w-b{right:-.02em;top:49%}
+.p-note{left:61%;bottom:5%;width:20%}
+.bx__sub{position:relative;z-index:9;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(16px,3vw,48px);align-items:end;margin-top:clamp(14px,2vw,28px);border-top:1px solid rgba(238,234,227,.2);padding-top:clamp(14px,2vw,22px)}
+.bx__name{font-family:var(--f-display);font-weight:300;font-size:clamp(24px,2.6vw,40px);line-height:1.02;letter-spacing:-.03em}
+.bx__name .serif{color:var(--wine-hi)}
+.bx__lead{color:var(--bone-dim);font-size:15.5px;max-width:52ch;justify-self:end}
+/* entrance: pieces arrive in layers */
+.js .bx .pc>.in{clip-path:inset(0 0 100% 0)}
+.js .bx .pc.blk-in>.in{clip-path:inset(0 100% 0 0)}
+.js .bx.go .pc>.in{clip-path:inset(0 0 0 0);transition:clip-path 1.2s var(--ease);transition-delay:calc(var(--t,0)*1ms)}
+.js .bx .wd .in>span{transform:translateY(102%)}
+.js .bx.go .wd .in>span{transform:none;transition:transform 1.3s var(--ease);transition-delay:calc(var(--t,0)*1ms)}
+.js .bx .wd>.in{clip-path:none!important}
+.js .bx .bx__lines line,.js .bx .bx__lines path{stroke-dasharray:1;stroke-dashoffset:1}
+.js .bx.go .bx__lines line,.js .bx.go .bx__lines path{stroke-dashoffset:0;transition:stroke-dashoffset 1.6s var(--ease) .9s}
+.js .bx .bx__lines text{opacity:0}
+.js .bx.go .bx__lines text{opacity:1;transition:opacity .6s 1.6s}
+@media (max-width:820px){
+  .bx__stage{height:auto;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+  .pc{position:relative;inset:auto!important;width:auto!important;height:auto!important;transform:none!important}
+  .p-w-a{grid-column:1/-1;order:1}
+  .p-a{grid-column:1/-1;order:2;aspect-ratio:16/9}
+  .p-w1{grid-column:5/7;order:3;height:14px!important;margin-top:-30px}
+  .p-w-b{grid-column:1/-1;order:4;justify-self:end}
+  .p-b{grid-column:1/4;order:5;aspect-ratio:3/4}
+  .p-c{grid-column:4/7;order:6;aspect-ratio:3/4}
+  .p-bars{grid-column:1/4;order:7}
+  .p-note{grid-column:4/7;order:8}
+  .p-d,.p-w2,.p-s,.p-dots,.bx__lines{display:none}
+  .wd{font-size:clamp(56px,21vw,120px)}
+  .bx__sub{grid-template-columns:1fr}
+  .bx__lead{justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){.pc{transition:none}.js .bx .pc>.in,.js .bx .wd .in>span{clip-path:none;transform:none}}
+
+/* ========== MANIFESTO ========== */
+.mani{position:relative;padding-block:clamp(96px,13vw,200px);overflow:hidden;background:var(--ink-2)}
+.mani__img{position:absolute;inset:0;opacity:.32;filter:grayscale(1) contrast(1.2)}
+.mani__img img{width:100%;height:100%;object-fit:cover}
+.mani__diag{position:absolute;left:-10%;right:-10%;top:50%;transform:translateY(-50%) rotate(-14deg);font-family:var(--f-display);font-weight:200;font-stretch:125%;font-size:clamp(90px,17vw,280px);line-height:.9;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px var(--wine-hi);white-space:nowrap;pointer-events:none;will-change:transform}
+.mani .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,6vw,96px);align-items:end}
+.mani h2{font-weight:800;font-stretch:112%;font-size:clamp(38px,5.6vw,88px);line-height:.92;letter-spacing:-.045em}
+.mani h2 .serif{font-weight:400;color:var(--wine-hi);letter-spacing:-.01em}
+.mani__txt{display:grid;gap:18px;max-width:58ch}
+.mani__txt p{color:var(--bone)}
+.mani__txt p+p{color:var(--bone-dim)}
+.tag{display:inline-flex;gap:10px;align-items:center;color:var(--bone-dim);margin-bottom:22px}
+.tag::before{content:"";width:28px;height:1px;background:currentColor}
+@media (max-width:820px){.mani .wrap{grid-template-columns:1fr}}
+
+/* ========== INDEX (diagonal strips) ========== */
+.idx{padding-block:clamp(80px,10vw,150px) clamp(48px,6vw,96px)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;border-bottom:1px solid rgba(238,234,227,.16);padding-bottom:18px;margin-bottom:clamp(28px,4vw,56px)}
+.sec-head h2{font-weight:900;font-stretch:125%;font-size:clamp(40px,7vw,112px);line-height:.85;letter-spacing:-.05em;text-transform:uppercase}
+.sec-head p{color:var(--bone-dim);max-width:38ch;font-size:15.5px}
+.strips{display:flex;height:clamp(420px,62vh,640px);gap:0;margin-inline:3%}
+.strip{position:relative;flex:1 1 0;min-width:0;overflow:hidden;transform:skewX(-11deg);border-right:2px solid var(--ink);transition:flex-grow .8s var(--ease);text-decoration:none;background:var(--ink-3)}
+.strip:last-child{border-right:0}
+.strip__img{position:absolute;inset:0 -40%;transform:skewX(11deg)}
+.strip__img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.62);transition:filter .7s var(--ease),transform 1.2s var(--ease);transform:scale(1.08)}
+.strip__lbl{position:absolute;left:0;right:0;bottom:0;transform:skewX(11deg);padding:20px 22% 24px;display:grid;gap:6px}
+.strip__n{font-family:var(--f-display);font-weight:200;font-stretch:125%;font-size:clamp(34px,4vw,62px);line-height:1;letter-spacing:-.04em}
+.strip__t{font-family:var(--f-display);font-weight:700;font-size:clamp(14px,1.2vw,18px);line-height:1.15;letter-spacing:-.01em;white-space:nowrap}
+.strip__m{color:var(--bone-dim);white-space:nowrap}
+.strip::after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--wine-hi);transform:scaleY(0);transform-origin:bottom;transition:transform .6s var(--ease)}
+.strip:hover,.strip:focus-visible{flex-grow:2.6}
+.strip:hover .strip__img img,.strip:focus-visible .strip__img img{filter:none;transform:scale(1)}
+.strip:hover::after,.strip:focus-visible::after{transform:scaleY(1)}
+.strip:focus-visible{outline-offset:-4px}
+@media (max-width:820px){
+  .strips{flex-direction:column;height:auto;margin:0;gap:2px}
+  .strip{transform:none;height:132px;border:0;flex:none}
+  .strip__img,.strip__lbl{transform:none;inset:0}
+  .strip__lbl{inset:auto 0 0;padding:16px}
+  .strip__img img{filter:grayscale(.3) brightness(.55)}
+  .strip:hover,.strip:focus-visible{flex-grow:0}
+}
+
+/* ========== PROJECT ========== */
+.proj{position:relative;scroll-margin-top:var(--nav)}
+.p-open{position:relative;padding-top:clamp(72px,9vw,140px)}
+.p-head{position:relative;z-index:3;display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(12px,2.4vw,40px);align-items:end}
+.p-num{font-family:var(--f-display);font-weight:200;font-stretch:125%;font-size:clamp(64px,10vw,170px);line-height:.78;letter-spacing:-.06em;color:var(--wine-hi)}
+.p-title{font-family:var(--f-display);font-weight:900;font-stretch:118%;font-size:clamp(46px,8.6vw,150px);line-height:.84;letter-spacing:-.055em;text-transform:uppercase;margin-bottom:calc(-.12em)}
+.p-title .serif{text-transform:none;font-weight:400;font-size:.62em;letter-spacing:-.02em;color:var(--bone);margin-left:.1em}
+.p-hero{position:relative;margin-top:calc(-1 * clamp(18px,3.4vw,56px));height:clamp(380px,72vh,780px);overflow:hidden}
+.p-hero img{width:100%;height:120%;object-fit:cover;will-change:transform}
+.p-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,12,12,.5),transparent 30%,transparent 65%,rgba(13,12,12,.7))}
+.p-hero .card{bottom:clamp(16px,3vw,40px)}
+.p-hero .award{position:absolute;z-index:2;right:calc(var(--gut-r) + var(--pad) - 16px);top:clamp(32px,5vw,72px);background:var(--wine);color:var(--bone);padding:12px 16px;max-width:240px}
+.p-hero .award b{display:block;font-family:var(--f-display);font-weight:800;font-size:19px;line-height:1.1;margin-top:4px;letter-spacing:-.01em;text-transform:none}
+.p-body{padding-block:clamp(56px,7vw,110px)}
+.p-intro{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,6vw,100px)}
+.p-intro h3{font-weight:700;font-stretch:100%;font-size:clamp(26px,2.9vw,44px);line-height:1.05;letter-spacing:-.03em}
+.p-intro h3 .serif{color:var(--wine-hi)}
+.p-intro .txt{display:grid;gap:16px;max-width:60ch;color:var(--bone-dim)}
+.p-intro .txt p:first-child{color:var(--bone)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chips li{list-style:none;border:1px solid rgba(238,234,227,.25);padding:4px 9px}
+.chips{padding:0}
+@media (max-width:820px){.p-intro{grid-template-columns:1fr}.p-head{grid-template-columns:1fr}.p-num{font-size:56px}}
+
+/* photo rows */
+.row{display:grid;gap:clamp(8px,1vw,14px);margin-top:clamp(8px,1vw,14px)}
+.row.r2{grid-template-columns:1.4fr 1fr}
+.row.r2b{grid-template-columns:1fr 1.4fr}
+.row.r3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.row.r21{grid-template-columns:1fr 1fr 1.2fr}
+.fig{position:relative;margin:0;overflow:hidden;background:var(--ink-3)}
+.fig img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.fig:hover img{transform:scale(1.035)}
+.fig figcaption{position:absolute;left:0;bottom:0;padding:8px 10px;background:var(--ink);color:var(--bone-dim)}
+.fig.ar43{aspect-ratio:4/3}.fig.ar32{aspect-ratio:3/2}.fig.ar34{aspect-ratio:3/4}.fig.ar169{aspect-ratio:16/9}.fig.ar11{aspect-ratio:1}
+.zoom{cursor:zoom-in}
+@media (max-width:700px){.row.r2,.row.r2b,.row.r3,.row.r21{grid-template-columns:1fr}}
+
+/* ========== LÁMINA (light gridded sheet) ========== */
+.lam{position:relative;background:var(--paper);color:var(--paper-ink);padding-block:clamp(40px,5vw,72px);
+  background-image:linear-gradient(var(--paper-line) 1px,transparent 1px),linear-gradient(90deg,var(--paper-line) 1px,transparent 1px);background-size:64px 64px;background-position:-1px -1px}
+.lam__frame{position:relative;border:1.5px solid var(--paper-ink);background:var(--paper)}
+.lam__frame::before,.lam__frame::after{content:"+";position:absolute;font-family:var(--f-mono);font-size:18px;line-height:1;color:var(--paper-ink)}
+.lam__frame::before{left:-6px;top:-10px}.lam__frame::after{right:-6px;bottom:-10px}
+.lam__grid{display:grid;grid-template-columns:minmax(0,1fr) 300px}
+.lam__draw{position:relative;padding:clamp(14px,2vw,28px);border-right:1.5px solid var(--paper-ink);display:grid;gap:clamp(12px,2vw,24px);align-content:start}
+.lam__draw .fig{background:transparent}
+.lam__draw .fig figcaption{background:var(--paper-ink);color:var(--paper)}
+.lam__side{display:grid;grid-template-rows:auto 1fr auto}
+.lam__side>*{padding:16px 18px;border-bottom:1.5px solid var(--paper-ink)}
+.lam__side>*:last-child{border-bottom:0}
+.lam__k{color:var(--paper-dim);display:block;margin-bottom:4px}
+.lam__t{font-family:var(--f-display);font-weight:900;font-stretch:118%;font-size:24px;line-height:.95;letter-spacing:-.035em;text-transform:uppercase}
+.lam__side p{font-size:14.5px;line-height:1.5;color:var(--paper-ink)}
+.lam__side ul{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:2px}
+.lam__side li{display:grid;grid-template-columns:22px 1fr;font-size:14px}
+.lam__side li span{font-family:var(--f-mono);font-size:11px;color:var(--paper-dim);padding-top:2px}
+.cajetin{display:grid;grid-template-columns:1fr 1fr}
+.cajetin>div{padding:10px 18px;border-top:1px solid var(--paper-line)}
+.cajetin>div:nth-child(odd){border-right:1px solid var(--paper-line)}
+.cajetin b{display:block;font-weight:600;font-size:14px}
+.scalebar{display:flex;align-items:flex-end;gap:12px}
+.scalebar svg{width:120px;height:22px}
+.north svg{width:34px;height:34px}
+.bars{display:grid;gap:3px;margin-top:6px}
+.bars i{display:block;height:7px;background:var(--paper-ink)}
+.bars i:nth-child(2n){background:var(--wine)}
+.halftone{position:absolute;pointer-events:none;width:160px;height:160px;background-image:radial-gradient(var(--wine) 1.6px,transparent 1.8px);background-size:9px 9px;opacity:.9}
+.wineblock{position:absolute;background:var(--wine);pointer-events:none}
+@media (max-width:980px){.lam__grid{grid-template-columns:1fr}.lam__draw{border-right:0;border-bottom:1.5px solid var(--paper-ink)}.halftone{display:none}}
+
+/* Interludio red line */
+.redline{position:absolute;left:0;right:0;top:0;width:100%;height:100%;pointer-events:none;z-index:2;overflow:visible}
+.redline path{fill:none;stroke:var(--wine-hi);stroke-width:5;stroke-linecap:round}
+.js .redline path{stroke-dasharray:1;stroke-dashoffset:1}
+.js .in .redline path{stroke-dashoffset:0;transition:stroke-dashoffset 2.6s var(--ease) .3s}
+
+/* Three Fates rhythm */
+.rhythm{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,4vw,64px);align-items:center;margin-top:clamp(40px,5vw,72px);padding:clamp(20px,3vw,36px);border:1px solid rgba(238,234,227,.16);background:var(--ink-2)}
+.rhythm canvas{width:100%;height:150px;display:block}
+.rhythm h4{font-weight:800;font-stretch:118%;font-size:clamp(22px,2.2vw,32px);letter-spacing:-.03em;line-height:1;text-transform:uppercase}
+.rhythm p{color:var(--bone-dim);margin-top:10px;font-size:15.5px;max-width:46ch}
+.rhythm .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;color:var(--bone-dim)}
+.rhythm .legend i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
+@media (max-width:820px){.rhythm{grid-template-columns:1fr}}
+
+/* Centro cívico programme */
+.prog-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.prog-list li{display:grid;grid-template-columns:120px 1fr 34px;gap:12px;align-items:center;font-size:14px}
+.prog-list .b{height:10px;background:transparent;position:relative;overflow:hidden}
+.prog-list .b i{position:absolute;inset:0;background:var(--wine);transform-origin:0 50%;transform:scaleX(var(--w))}
+.js .prog-list .b i{transform:scaleX(0)}
+.js .in .prog-list .b i{transform:scaleX(var(--w));transition:transform 1.3s var(--ease);transition-delay:calc(var(--d)*120ms)}
+.prog-list .n{font-family:var(--f-mono);font-size:11px;color:var(--paper-dim);text-align:right}
+
+/* Before / after */
+.ba{margin-top:clamp(40px,5vw,72px)}
+.ba__bar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.ba__bar h4{font-weight:800;font-stretch:118%;font-size:clamp(22px,2.2vw,32px);letter-spacing:-.03em;text-transform:uppercase}
+.ba__tabs{display:flex;border:1px solid rgba(238,234,227,.3)}
+.ba__tabs button{padding:8px 12px}
+.ba__tabs button[aria-pressed="true"]{background:var(--bone);color:var(--ink)}
+.ba__stage{position:relative;aspect-ratio:16/9;max-height:78vh;width:100%;overflow:hidden;background:#0a0a0a;user-select:none;touch-action:pan-y}
+.ba__stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba__stage img.contain{object-fit:contain;background:#0a0a0a}
+.ba__after{clip-path:inset(0 0 0 var(--x,50%))}
+.ba__handle{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:var(--bone);transform:translateX(-1px);pointer-events:none}
+.ba__handle::after{content:"◂ ▸";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--bone);color:var(--ink);font-size:12px;padding:8px 10px;white-space:nowrap;font-family:var(--f-mono)}
+.ba__lbl{position:absolute;top:14px;padding:5px 9px;background:var(--ink);pointer-events:none}
+.ba__lbl.l{left:14px}.ba__lbl.r{right:14px;background:var(--wine)}
+.ba__range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba__cap{margin-top:10px;color:var(--bone-dim)}
+
+/* ========== TALLER (tall strips) ========== */
+.taller{padding-block:clamp(80px,10vw,150px);background:var(--ink-2)}
+.filters{display:flex;gap:0;border:1px solid rgba(238,234,227,.3);width:max-content;max-width:100%;overflow-x:auto}
+.filters button{padding:8px 12px;white-space:nowrap}
+.filters button[aria-pressed="true"]{background:var(--bone);color:var(--ink)}
+.tall{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,22vw,320px);gap:12px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;margin-top:28px;scrollbar-color:var(--wine-hi) transparent}
+.tall .t{position:relative;margin:0;scroll-snap-align:start;height:clamp(420px,64vh,620px);overflow:hidden;background:var(--ink-3)}
+@media (max-width:700px){.tall{grid-auto-columns:72vw}.tall .t{height:min(560px,120vw)}}
+.tall .t img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s}
+.tall .t:hover img{transform:scale(1.05)}
+.tall .t .v{position:absolute;left:14px;top:14px;writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--f-display);font-weight:800;font-stretch:118%;font-size:22px;letter-spacing:-.01em;text-transform:uppercase;color:var(--bone);mix-blend-mode:difference}
+.tall .t .c{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;background:linear-gradient(transparent,rgba(13,12,12,.9));color:var(--bone)}
+.tall .t[hidden]{display:none}
+
+/* ========== PERFIL (three color columns) ========== */
+.perfil{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.col{padding-block:clamp(56px,7vw,110px);padding-inline:clamp(20px,3vw,48px);display:flex;flex-direction:column;gap:28px;min-width:0}
+.col:first-child{padding-left:calc(var(--gut-l) + var(--pad) - 16px)}
+.col:last-child{padding-right:calc(var(--gut-r) + var(--pad) - 16px)}
+.col.c1{background:var(--ink)}
+.col.c2{background:var(--wine)}
+.col.c3{background:var(--bone);color:var(--paper-ink)}
+.col .big{font-family:var(--f-display);font-weight:900;font-stretch:125%;font-size:clamp(40px,5vw,84px);line-height:.85;letter-spacing:-.05em;text-transform:uppercase}
+.col h4{font-family:var(--f-mono);font-weight:500;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;opacity:.7;margin-bottom:10px}
+.col ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.col li b{display:block;font-weight:600}
+.col li span{opacity:.75;font-size:15px}
+.sw{display:grid;gap:10px}
+.sw li{display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px}
+.sw .lv{display:flex;gap:3px}
+.sw .lv i{width:16px;height:8px;background:currentColor;opacity:.18}
+.sw .lv i.on{opacity:1}
+.sw .lv i.on:last-of-type{background:var(--wine)}
+@media (max-width:900px){.perfil{grid-template-columns:1fr}.col{padding-left:calc(var(--gut-l) + var(--pad) - 16px)!important;padding-right:calc(var(--gut-r) + var(--pad) - 16px)!important}}
+
+/* ========== CONTACT ========== */
+.contact{position:relative;padding-block:clamp(80px,10vw,150px) 40px;overflow:hidden}
+.contact__bg{position:absolute;inset:0;opacity:.55}
+.contact__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 80%}
+.contact .wrap{position:relative}
+.contact h2{font-weight:900;font-stretch:125%;font-size:clamp(48px,10vw,170px);line-height:.82;letter-spacing:-.055em;text-transform:uppercase}
+.contact h2 .serif{text-transform:none;font-weight:400;color:var(--wine-hi);letter-spacing:-.02em}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(238,234,227,.25);margin-top:clamp(40px,6vw,80px)}
+.cgrid>div{padding:18px 18px 18px 0;display:grid;gap:8px;min-width:0}
+.cgrid>div+div{padding-left:18px;border-left:1px solid rgba(238,234,227,.25)}
+.cgrid .v{font-size:clamp(16px,1.6vw,21px);word-break:break-word;user-select:all}
+.copy{justify-self:start;border:1px solid rgba(238,234,227,.35);padding:6px 10px}
+.copy:hover{background:var(--bone);color:var(--ink)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(60px,8vw,120px);color:var(--bone-dim)}
+@media (max-width:760px){.cgrid{grid-template-columns:1fr}.cgrid>div+div{padding-left:0;border-left:0;border-top:1px solid rgba(238,234,227,.25)}}
+
+
+
+/* ========== SLICED HERO REVEALS (01 bars, 02 louvers) ========== */
+.sl{background:#0a0a0a}
+.sl .s{position:absolute;overflow:hidden;will-change:transform,clip-path}
+.sl .s>i{position:absolute;display:block;background-size:cover;background-position:50% 50%}
+.sl-h .s{left:0;right:0}
+.sl-h .s>i{left:0;right:0}
+.sl-v .s{top:0;bottom:0}
+.sl-v .s>i{top:0;bottom:0}
+.js .sl-h .s{transform:translateX(var(--from,-102%))}
+.js .sl-h.in .s{transform:translateX(calc(var(--off,0)*1px));transition:transform 1.25s var(--ease);transition-delay:calc(var(--k)*85ms)}
+.js .sl-h.in.live .s{transition:transform .9s var(--ease)}
+.js .sl-v .s{clip-path:inset(0 50% 0 50%)}
+.js .sl-v.in .s{clip-path:inset(0 0 0 0);transition:clip-path 1s var(--ease);transition-delay:calc(var(--k)*55ms)}
+.sl-v .s::after{content:"";position:absolute;top:0;bottom:0;right:0;width:1px;background:rgba(13,12,12,.35);opacity:0;transition:opacity .8s}
+.sl-v:hover .s::after{opacity:1}
+.sl-v .s>i{transition:transform 1.2s var(--ease)}
+.sl-v:hover .s>i{transform:scale(1.04)}
+
+/* ========== FILM STRIP (01) ========== */
+.film{position:relative;height:300vh;margin-top:clamp(8px,1vw,14px)}
+.film__sticky{position:sticky;top:calc(var(--nav) + env(safe-area-inset-top,0px));height:calc(100vh - var(--nav));display:flex;flex-direction:column;justify-content:center;gap:16px;overflow:hidden}
+.film__head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;width:100%}
+.film__head h4{font-weight:800;font-stretch:118%;font-size:clamp(22px,2.4vw,34px);letter-spacing:-.03em;text-transform:uppercase}
+.film__prog{color:var(--bone-dim);font-variant-numeric:tabular-nums}
+.film__track{display:flex;gap:14px;padding-left:calc(var(--gut-l) + var(--pad) - 16px);will-change:transform}
+.film__fr{position:relative;flex:none;margin:0;height:min(62vh,600px);aspect-ratio:4/3;overflow:hidden;background:var(--ink-3)}
+.film__fr.tall{aspect-ratio:3/4}
+.film__fr img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);transition:transform .2s linear}
+.film__fr figcaption{position:absolute;left:0;bottom:0;background:var(--ink);padding:7px 10px;color:var(--bone)}
+.film__bar{height:2px;background:rgba(238,234,227,.15);position:relative}
+.film__bar i{position:absolute;inset:0;background:var(--wine-hi);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:820px),(prefers-reduced-motion:reduce){
+  .film{height:auto}
+  .film__sticky{position:relative;top:0;height:auto;padding-block:24px}
+  .film__track{overflow-x:auto;scroll-snap-type:x mandatory;padding-right:16px;transform:none!important}
+  .film__fr{height:min(56vh,420px);scroll-snap-align:start}
+  .film__fr img{transform:none}
+  .film__bar{display:none}
+}
+
+/* ========== SCROLLYTELLING (02) ========== */
+.sty{padding-block:clamp(40px,6vw,96px)}
+.sty__grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,80px)}
+.sty__step{min-height:70vh;display:flex;flex-direction:column;justify-content:center;gap:10px;opacity:.28;transition:opacity .6s var(--ease)}
+.sty__step.on{opacity:1}
+.sty__step .mono{color:var(--wine-hi)}
+.sty__step h4{font-weight:900;font-stretch:118%;font-size:clamp(30px,3.4vw,52px);line-height:.92;letter-spacing:-.045em;text-transform:uppercase}
+.sty__step p{color:var(--bone-dim);max-width:40ch}
+.sty__stage{position:relative}
+.sty__frame{position:sticky;top:calc(var(--nav) + 8vh);height:min(76vh,720px);overflow:hidden;background:var(--ink-3)}
+.sty__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:polygon(0 0,0 0,0 100%,0 100%);transition:clip-path 1.1s var(--ease)}
+.sty__img.on{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);z-index:2}
+.sty__img.was{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);z-index:1}
+.sty__frame::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 calc(100%/14 - 1px),rgba(13,12,12,.55) calc(100%/14 - 1px) calc(100%/14));opacity:0;transition:opacity .35s}
+.sty__frame.flash::after{opacity:1}
+.sty__ticks{position:absolute;z-index:4;left:14px;bottom:14px;display:flex;gap:5px}
+.sty__ticks i{width:26px;height:3px;background:rgba(238,234,227,.35)}
+.sty__ticks i.on{background:var(--wine-hi)}
+@media (max-width:860px){
+  .sty__grid{grid-template-columns:1fr}
+  .sty__stage{order:-1}
+  .sty__frame{position:relative;top:0;height:auto;aspect-ratio:4/3}
+  .sty__step{min-height:0;opacity:1;padding-block:14px;border-top:1px solid rgba(238,234,227,.16)}
+}
+@media (prefers-reduced-motion:reduce){.sty__img{transition:none}.js .sl .s{transform:none!important;clip-path:none!important}}
+
+/* ========== GALLERY STRIP (per project) ========== */
+.gal{margin-top:clamp(28px,4vw,56px)}
+.gal__bar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:12px}
+.gal__bar h4{font-weight:800;font-stretch:118%;font-size:clamp(20px,2vw,28px);letter-spacing:-.03em;text-transform:uppercase}
+.arrows{display:flex;border:1px solid rgba(238,234,227,.3)}
+.arrows button{width:42px;height:38px;display:grid;place-items:center;font-family:var(--f-mono);font-size:15px;transition:background-color .2s,color .2s,transform .1s}
+.arrows button:hover{background:var(--bone);color:var(--ink)}
+.arrows button:active{transform:scale(.94)}
+.arrows button+button{border-left:1px solid rgba(238,234,227,.3)}
+.track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(260px,34vw,520px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:12px;scrollbar-color:var(--wine-hi) transparent;overscroll-behavior-x:contain}
+.track .fig{scroll-snap-align:start;aspect-ratio:4/3}
+.gal__count{color:var(--bone-dim);font-variant-numeric:tabular-nums}
+
+/* ========== OTROS PROYECTOS ========== */
+.otros{padding-block:clamp(80px,10vw,150px);position:relative}
+.otros .sec-head h2 .serif{text-transform:none;font-weight:300;color:var(--wine-hi);letter-spacing:-.03em}
+.otros__track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(270px,30vw,440px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:16px;scrollbar-color:var(--wine-hi) transparent;overscroll-behavior-x:contain}
+.oc{scroll-snap-align:start;display:flex;flex-direction:column;gap:12px;text-align:left;cursor:pointer;min-width:0}
+.oc__img{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ink-3)}
+.oc__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s var(--ease),transform 1.2s var(--ease)}
+.oc__img img+img{opacity:0}
+.oc:hover .oc__img img+img,.oc:focus-visible .oc__img img+img{opacity:1}
+.oc:hover .oc__img img{transform:scale(1.04)}
+.oc__tag{position:absolute;left:0;top:0;background:var(--ink);color:var(--bone);padding:6px 9px;z-index:2}
+.oc__tag.w{background:var(--wine)}
+.oc__t{font-family:var(--f-display);font-weight:800;font-stretch:112%;font-size:clamp(20px,1.8vw,26px);line-height:1.02;letter-spacing:-.03em}
+.oc__m{color:var(--bone-dim)}
+.oc__d{color:var(--bone-dim);font-size:15px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.oc__open{color:var(--bone);display:inline-flex;gap:8px;align-items:center}
+.oc__open::after{content:"→";transition:transform .3s var(--ease)}
+.oc:hover .oc__open::after{transform:translateX(4px)}
+.oc:active{transform:scale(.985)}
+
+/* ficha modal */
+.fx{position:fixed;inset:0;z-index:140;background:rgba(8,8,8,.88);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);overflow-y:auto;padding:max(20px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.fx[hidden]{display:none}
+.fx__box{position:relative;max-width:1200px;margin:clamp(12px,4vh,48px) auto;background:var(--ink-2);border:1px solid rgba(238,234,227,.16);display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+.fx__media{position:relative;background:#0a0a0a;min-height:300px}
+.fx__main{width:100%;aspect-ratio:3/2;object-fit:cover;cursor:zoom-in}
+.fx__thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:6px;padding:6px}
+.fx__main.dr{object-fit:contain;background:var(--paper)}
+.fx__cap{padding:8px 10px 0;color:var(--bone-dim);min-height:1.4em}
+.fx__thumbs button{aspect-ratio:3/2;overflow:hidden;opacity:.5;transition:opacity .2s;outline-offset:-2px}
+.fx__thumbs button[aria-pressed="true"],.fx__thumbs button:hover{opacity:1}
+.fx__thumbs img{width:100%;height:100%;object-fit:cover}
+.fx__info{padding:clamp(20px,3vw,36px);display:flex;flex-direction:column;gap:18px;min-width:0}
+.fx__info h3{font-weight:900;font-stretch:118%;font-size:clamp(28px,3vw,44px);line-height:.92;letter-spacing:-.045em;text-transform:uppercase}
+.fx__info dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0;border-top:1px solid rgba(238,234,227,.2);padding-top:14px}
+.fx__info dt{color:var(--bone-dim)}
+.fx__info dd{margin:0;font-size:14.5px}
+.fx__info .txt{display:grid;gap:12px;color:var(--bone-dim)}
+.fx__info .txt p:first-child{color:var(--bone)}
+.fx__close{position:absolute;right:0;top:0;z-index:3;background:var(--bone);color:var(--ink);padding:9px 12px}
+.fx__nav{display:flex;gap:0;margin-top:auto;border:1px solid rgba(238,234,227,.3);align-self:flex-start}
+.fx__nav button{padding:9px 12px}
+.fx__nav button+button{border-left:1px solid rgba(238,234,227,.3)}
+.fx__nav button:hover{background:var(--bone);color:var(--ink)}
+@media (max-width:860px){.fx__box{grid-template-columns:1fr}}
+
+/* video */
+.vid{position:relative;margin-top:clamp(8px,1vw,14px);background:#000}
+.vid video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.vid__cap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:10px;color:var(--bone-dim)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:160;background:rgba(8,8,8,.94);display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(24px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb[hidden]{display:none}
+.lb img{max-width:100%;max-height:86vh;object-fit:contain}
+.lb p{margin-top:12px;color:var(--bone-dim);text-align:center}
+.lb button{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:calc(14px + env(safe-area-inset-right,0px));border:1px solid rgba(238,234,227,.4);padding:8px 12px}
+
+.lang button:active,.ba__tabs button:active,.filters button:active,.copy:active,.lb button:active{transform:scale(.96)}
+.lang button,.ba__tabs button,.filters button,.copy{transition:transform .1s ease-out,background-color .2s,color .2s}
+@media (prefers-reduced-transparency:reduce){.nav,.card{background:var(--ink);-webkit-backdrop-filter:none;backdrop-filter:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv,.js .wipe>img,.js .split .line>span,.js .hero__word span{opacity:1!important;transform:none!important;clip-path:none!important}
+  .js .redline path{stroke-dashoffset:0}
+}
+
+/* ========== GLASS LAYER: frosted surfaces float over images; paper sheets and wine blocks stay square ==========
+   Rule: glass = 14px radius / pills; solid brutalist pieces = 0 radius. */
+:root{--g-bg:rgba(24,22,22,.30);--g-bg-hi:rgba(255,255,255,.08);--g-brd:rgba(255,255,255,.22);--g-hi:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(255,255,255,.05);--g-sh:0 18px 50px -20px rgba(0,0,0,.6);--g-blur:blur(22px) saturate(160%);--g-r:14px}
+.glass,.card,.p-hero .award,.ba__lbl,.oc__tag,.fig figcaption,.film__fr figcaption,.sty__ticks,.bx .p-note,.tall .t .c,.fx__box{
+  -webkit-backdrop-filter:var(--g-blur);backdrop-filter:var(--g-blur);border:1px solid var(--g-brd);box-shadow:var(--g-hi),var(--g-sh);
+  background:linear-gradient(145deg,var(--g-bg-hi),rgba(255,255,255,0) 45%),var(--g-bg)}
+.card{border-radius:var(--g-r);padding:18px 20px}
+.card::before,.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(120% 60% at 0% 0%,rgba(255,255,255,.16),transparent 55%)}
+.p-hero .award{border-radius:var(--g-r);background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,0) 50%),rgba(109,10,31,.55);border-color:rgba(255,180,190,.28)}
+.chips li{border-radius:999px;padding:5px 12px;background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.fig figcaption,.film__fr figcaption{left:10px;bottom:10px;border-radius:999px;padding:6px 12px;color:var(--bone)}
+.lam__draw .fig figcaption{background:rgba(21,19,19,.55);color:var(--paper)}
+.ba__lbl{border-radius:999px;padding:6px 12px}
+.ba__lbl.r{background:linear-gradient(145deg,rgba(255,255,255,.14),transparent 50%),rgba(109,10,31,.6)}
+.oc__tag{left:10px;top:10px;border-radius:999px;padding:6px 11px}
+.oc__tag.w{background:linear-gradient(145deg,rgba(255,255,255,.14),transparent 50%),rgba(109,10,31,.6)}
+.sty__ticks{padding:8px 10px;border-radius:999px;left:14px;bottom:14px}
+.tall .t .c{left:10px;right:10px;bottom:10px;border-radius:var(--g-r)}
+.lang,.ba__tabs,.arrows,.filters{border-radius:999px;overflow:hidden;background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.2);box-shadow:inset 0 1px 0 rgba(255,255,255,.12);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.lang button,.ba__tabs button,.filters button{border-radius:999px}
+.arrows button+button{border-left-color:rgba(255,255,255,.14)}
+.copy{border-radius:999px;background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.22)}
+.bx .p-note{padding:14px 16px;border-radius:var(--g-r)}
+.bx .p-note>.in{clip-path:none!important}
+.fx__box{border-radius:18px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.07),transparent 40%),rgba(23,21,21,.72)}
+.fx__close{border-radius:0 0 0 14px}
+.nav{box-shadow:inset 0 -1px 0 rgba(255,255,255,.06)}
+/* glass shine follows the pointer on cards */
+.card,.glass{--mx:30%;--my:0%}
+.card::after,.glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(240px circle at var(--mx) var(--my),rgba(255,255,255,.12),transparent 60%);opacity:0;transition:opacity .4s}
+.card:hover::after,.glass:hover::after{opacity:1}
+
+/* ========== 05: terraces hero + sticky stack ========== */
+.sl-t .s{left:0;right:0}
+.sl-t .s>i{left:0;right:0}
+.js .sl-t .s>i{transform:translateY(18%) scale(1.08);filter:blur(10px) brightness(.7)}
+.js .sl-t .s{clip-path:inset(100% 0 0 0)}
+.js .sl-t.in .s{clip-path:inset(0 0 0 0);transition:clip-path 1.2s var(--ease);transition-delay:calc((4 - var(--k))*120ms)}
+.js .sl-t.in .s>i{transform:none;filter:none;transition:transform 1.6s var(--ease),filter 1.4s var(--ease);transition-delay:calc((4 - var(--k))*120ms)}
+.stk{padding-block:clamp(40px,6vw,90px) clamp(60px,8vw,120px)}
+.stk__head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.stk__head h4{font-weight:800;font-stretch:118%;font-size:clamp(22px,2.4vw,34px);letter-spacing:-.03em;text-transform:uppercase}
+.stk__card{position:sticky;top:calc(var(--nav) + 3vh + var(--k)*16px);margin:0 0 6vh;height:min(76vh,760px);overflow:hidden;border-radius:4px;background:var(--ink-3);transform-origin:50% 0;transform:scale(var(--s,1));filter:brightness(var(--b,1));will-change:transform}
+.stk__card img{width:100%;height:100%;object-fit:cover;transform:scale(var(--zi,1.06));transition:transform .2s linear}
+.stk__cap{position:absolute;left:clamp(14px,2vw,28px);bottom:clamp(14px,2vw,28px);width:min(380px,calc(100% - 28px));padding:18px 20px;border-radius:var(--g-r);display:grid;gap:8px;color:var(--bone)}
+.stk__cap b{font-family:var(--f-display);font-weight:800;font-stretch:118%;font-size:clamp(24px,2.4vw,34px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase}
+.stk__cap p{margin:0;font-size:15px;color:var(--bone);opacity:.9}
+.stk__cap .mono{color:var(--bone)}
+@media (prefers-reduced-motion:reduce){.stk__card{position:relative;top:0;transform:none!important;filter:none!important}.js .sl-t .s,.js .sl-t .s>i{clip-path:none!important;transform:none!important;filter:none!important}}
+@media (prefers-reduced-transparency:reduce){.glass,.card,.p-hero .award,.ba__lbl,.oc__tag,.fig figcaption,.film__fr figcaption,.sty__ticks,.bx .p-note,.tall .t .c,.fx__box,.stk__cap{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(18,16,16,.92)}}
+</style>
+
+
+</head>
+<body>
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="JCM, inicio"><b>JCM</b><span class="mono"><span class="es">Portafolio</span><span class="en">Portfolio</span> 2026</span></a>
+    <ul class="mono">
+      <li><a href="#proyectos" data-nav="proyectos"><span class="es">Proyectos</span><span class="en">Projects</span></a></li>
+      <li><a href="#otros" data-nav="otros"><span class="es">Otros</span><span class="en">More</span></a></li>
+      <li><a href="#taller" data-nav="taller"><span class="es">Taller</span><span class="en">Studio</span></a></li>
+      <li><a href="#perfil" data-nav="perfil"><span class="es">Perfil</span><span class="en">Profile</span></a></li>
+      <li><a href="#contacto" data-nav="contacto"><span class="es">Contacto</span><span class="en">Contact</span></a></li>
+    </ul>
+    <div class="nav__right">
+      <span class="count mono" id="count">00 / 05</span>
+      <div class="lang mono" role="group" aria-label="Idioma / Language">
+        <button type="button" id="lang-es" aria-pressed="true">ES</button>
+        <button type="button" id="lang-en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+  <i class="prog" id="prog"></i>
+</nav>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<header class="bx" id="hero">
+  <div class="wrap">
+    <div class="bx__top mono">
+      <span>JCM</span>
+      <span><span class="es">Arquitectura · Universidad Nacional de Colombia</span><span class="en">Architecture · Universidad Nacional de Colombia</span></span>
+      <span>2026</span>
+    </div>
+    <div class="bx__stage" id="bx-stage">
+      <div class="pc ph p-a" style="--z:14;--t:120"><div class="in"><img src="hero-interludio-gris.webp" alt="" fetchpriority="high"></div></div>
+      <div class="pc blk blk-in p-w1" style="--z:8;--t:320"><div class="in"></div></div>
+      <div class="pc ph p-b" style="--z:22;--t:260"><div class="in"><img src="civico-axo.webp" alt="" style="object-position:50% 55%"></div></div>
+      <div class="pc ph p-c" style="--z:30;--t:520"><div class="in"><img src="civico-seccion.webp" alt=""></div></div>
+      <div class="pc ph p-d" style="--z:18;--t:620"><div class="in"><img src="maqueta-reticulado.webp" alt=""></div></div>
+      <div class="pc blk blk-in p-w2" style="--z:26;--t:740"><div class="in"></div></div>
+      <div class="pc blk sig p-s" style="--z:34;--t:860"><div class="in"></div></div>
+      <div class="pc dots p-dots" style="--z:12;--t:900"><div class="in"></div></div>
+      <div class="pc p-bars" style="--z:10;--t:780"><div class="in hb"><i style="width:100%"></i><i style="width:74%"></i><i class="r" style="width:38%"></i><i style="width:88%"></i><i style="width:52%"></i><i style="width:66%"></i><i style="width:24%"></i></div></div>
+      <svg class="bx__lines" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+        <line pathLength="1" x1="0" y1="96" x2="1000" y2="96"/>
+        <line pathLength="1" x1="402" y1="0" x2="402" y2="600"/>
+        <line pathLength="1" class="r" x1="890" y1="20" x2="890" y2="580"/>
+        <path pathLength="1" d="M600 590 L600 560 M600 575 L820 575 M820 590 L820 560"/>
+        <path pathLength="1" d="M470 300 L560 300 L560 345"/>
+      </svg>
+      <h1 class="pc wd p-w-a" style="--z:-6;--t:200" aria-label="Portafolio"><span class="in"><span><span class="es">PORTA</span><span class="en">PORT</span></span></span></h1>
+      <div class="pc wd p-w-b" style="--z:-10;--t:380" aria-hidden="true"><span class="in"><span>FOLIO</span></span></div>
+      <div class="pc note p-note" style="--z:6;--t:1000"><div class="in note">
+        <b><span class="es">Índice</span><span class="en">Index</span></b>
+        <span>01 <em>Interludio carmesí</em> 2023</span>
+        <span>02 <em><span class="es">Centro cívico</span><span class="en">Civic centre</span></em> 2025</span>
+        <span>03 <em>The Three Fates</em> 2024</span>
+        <span>04 <em>Casa Rodr-Es</em> 2025</span>
+        <span>05 <em>Casa Val-Leal</em> 2024</span>
+      </div></div>
+    </div>
+    <div class="bx__sub">
+      <p class="bx__name">Juan Camilo Molano <span class="serif es">arquitectura como intención</span><span class="serif en">architecture as intent</span></p>
+      <p class="bx__lead"><span class="es">Estudiante de arquitectura en noveno semestre. Proyectos de taller y de práctica profesional, del módulo a la ciudad.</span><span class="en">Ninth-semester architecture student. Studio and professional work, from the module to the city.</span></p>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MANIFESTO ================= -->
+<section class="mani" aria-labelledby="mani-h">
+  <div class="mani__img"><img src="civico-axo.webp" alt="" loading="lazy"></div>
+  <div class="mani__diag" aria-hidden="true" data-parx=".25"><span class="es">INTENCIÓN · INTENCIÓN</span><span class="en">INTENT · INTENT · INTENT</span></div>
+  <div class="wrap">
+    <div>
+      <span class="tag mono"><span class="es">Visión</span><span class="en">Vision</span></span>
+      <h2 id="mani-h" class="split rv">
+        <span class="line"><span style="--i:0"><span class="es">No es solo</span><span class="en">Not only</span></span></span>
+        <span class="line"><span style="--i:1"><span class="es">técnica o teoría.</span><span class="en">technique or theory.</span></span></span>
+        <span class="line"><span style="--i:2" class="serif"><span class="es">Es intención.</span><span class="en">It is intent.</span></span></span>
+      </h2>
+    </div>
+    <div class="mani__txt rv" style="--d:2">
+      <p class="es">Para mí la arquitectura es una disciplina atemporal que habla y se relaciona. Diseñar algo que se sostenga es el punto de partida. Lo que busco es construir algo que signifique, que transmita y que cambie la relación de una persona con su entorno.</p>
+      <p class="en">To me architecture is a timeless discipline that speaks and relates. Designing something that stands is the starting point. What I look for is to build something that means, that conveys, and that changes how a person relates to their surroundings.</p>
+      <p class="es">Llegué a la arquitectura por la ingeniería y el dibujo técnico. Con los años me ganó el arte: la identidad visual y la idea de comunicar a través de una obra.</p>
+      <p class="en">I came to architecture through engineering and technical drawing. Over the years art won me over: visual identity, and the idea of communicating through built work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDEX ================= -->
+<section class="idx" id="proyectos" aria-labelledby="idx-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="idx-h"><span class="es">Proyectos</span><span class="en">Projects</span></h2>
+      <p><span class="es">Tres equipamientos a escala urbana y dos viviendas, una de ellas construida con cliente real. Elige una franja para ver el proyecto.</span><span class="en">Three urban-scale civic buildings and two houses, one built for a real client. Pick a strip to open the project.</span></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="strips">
+      <a class="strip" href="#p01"><div class="strip__img"><img src="interludio-render.webp" alt="" loading="lazy"></div><div class="strip__lbl"><span class="strip__n">01</span><span class="strip__t">Interludio carmesí</span><span class="strip__m mono">2023 · <span class="es">Campus</span><span class="en">Campus</span></span></div></a>
+      <a class="strip" href="#p02"><div class="strip__img"><img src="civico-render.webp" alt="" loading="lazy"></div><div class="strip__lbl"><span class="strip__n">02</span><span class="strip__t"><span class="es">Centro cívico</span><span class="en">Civic centre</span></span><span class="strip__m mono">2025 · <span class="es">Técnica</span><span class="en">Technique</span></span></div></a>
+      <a class="strip" href="#p03"><div class="strip__img"><img src="fates-plaza.webp" alt="" loading="lazy"></div><div class="strip__lbl"><span class="strip__n">03</span><span class="strip__t">The Three Fates</span><span class="strip__m mono">2024 · <span class="es">Forma</span><span class="en">Form</span></span></div></a>
+      <a class="strip" href="#p04"><div class="strip__img"><img src="rodres-render.webp" alt="" loading="lazy"></div><div class="strip__lbl"><span class="strip__n">04</span><span class="strip__t">Casa Rodr-Es</span><span class="strip__m mono">2025 · <span class="es">Obra</span><span class="en">Built</span></span></div></a>
+      <a class="strip" href="#p05"><div class="strip__img"><img src="valleal-portada.webp" alt="" loading="lazy"></div><div class="strip__lbl"><span class="strip__n">05</span><span class="strip__t">Casa Val-Leal</span><span class="strip__m mono">2024 · <span class="es">Interior</span><span class="en">Interior</span></span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 01 INTERLUDIO ================= -->
+<article class="proj" id="p01" data-num="01">
+  <div class="p-open">
+    <div class="wrap p-head">
+      <span class="p-num rv">01</span>
+      <h2 class="p-title split rv"><span class="line"><span style="--i:0">Interludio</span></span><span class="line"><span style="--i:1"><span class="serif">carmesí</span></span></span></h2>
+    </div>
+    <div class="p-hero sl sl-h" data-n="7" data-img="interludio-render.webp" role="img" aria-label="Render de Interludio carmesí: barras de vivienda elevadas con árboles rojos frente al agua">
+      <div class="award mono"><span class="es">Seleccionado</span><span class="en">Selected</span><b>Salón de Octubre 2023 · Manizales</b></div>
+      <div class="card mono"><dl>
+        <dt><span class="es">Curso</span><span class="en">Studio</span></dt><dd>Proyecto 3</dd>
+        <dt><span class="es">Periodo</span><span class="en">Term</span></dt><dd>2023-1</dd>
+        <dt><span class="es">Programa</span><span class="en">Brief</span></dt><dd><span class="es">Sede Universidad Nacional</span><span class="en">National University campus</span></dd>
+        <dt><span class="es">Lugar</span><span class="en">Site</span></dt><dd>Magdalena</dd>
+        <dt><span class="es">Tipo</span><span class="en">Type</span></dt><dd>Mat building</dd>
+        <dt><span class="es">Equipo</span><span class="en">Team</span></dt><dd>Kevin Ramírez, Felipe Achury</dd>
+      </dl></div>
+    </div>
+  </div>
+  <div class="p-body"><div class="wrap">
+    <div class="p-intro">
+      <h3 class="rv"><span class="es">Tres módulos que encajan, barras que se combinan y un <span class="serif">campus</span> que crece como tejido.</span><span class="en">Three modules that interlock, bars that combine, and a <span class="serif">campus</span> that grows like a fabric.</span></h3>
+      <div class="txt rv" style="--d:1">
+        <p class="es">El proyecto parte de tres módulos dúplex de vivienda que encajan entre sí y forman barras. Las distintas configuraciones de esas barras generan un mat building: un tejido bajo y continuo que propone una sede de la Universidad Nacional en el Magdalena.</p>
+        <p class="en">The project starts from three duplex housing modules that interlock to form bars. Different arrangements of those bars generate a mat building: a low, continuous fabric proposing a National University campus in Magdalena.</p>
+        <p class="es">Las barras se elevan sobre pilotes y liberan el suelo. A nivel de peatón aparecen nuevas configuraciones espaciales: recorridos cubiertos, patios y un paseo que cose el conjunto.</p>
+        <p class="en">The bars are lifted on pilotis and free the ground. At pedestrian level new spatial configurations appear: covered routes, courtyards and a promenade that stitches the whole together.</p>
+        <ul class="chips mono"><li>Rhino</li><li>D5 Render</li><li>Illustrator</li><li><span class="es">Maqueta</span><span class="en">Model</span></li></ul>
+      </div>
+    </div>
+  </div></div>
+  <section class="lam" aria-label="Lámina Interludio carmesí">
+    <div class="wrap">
+      <div class="lam__frame rv">
+        <div class="lam__grid">
+          <div class="lam__draw">
+            <svg class="redline" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M-20 340 C 180 300, 260 120, 470 150 S 760 330, 1020 60"/></svg>
+            <figure class="fig zoom"><img src="interludio-lamina.webp" alt="Lámina: corte urbano, perspectiva del paseo y planta del conjunto" loading="lazy" data-cap="Corte, perspectiva peatonal y planta de conjunto"></figure>
+          </div>
+          <div class="lam__side">
+            <div><span class="lam__k mono"><span class="es">Lámina</span><span class="en">Sheet</span> 01 / A</span><span class="lam__t">Interludio<br>carmesí</span></div>
+            <div>
+              <span class="lam__k mono"><span class="es">Contenido</span><span class="en">Contents</span></span>
+              <ul>
+                <li><span>a</span><span class="es">Corte urbano hacia el río</span><span class="en">Urban section to the river</span></li>
+                <li><span>b</span><span class="es">Perspectiva del paseo peatonal</span><span class="en">Pedestrian promenade view</span></li>
+                <li><span>c</span><span class="es">Planta de conjunto</span><span class="en">Site plan</span></li>
+              </ul>
+              <div class="bars" aria-hidden="true"><i style="width:88%"></i><i style="width:54%"></i><i style="width:72%"></i><i style="width:30%"></i></div>
+            </div>
+            <div class="cajetin mono">
+              <div><span class="lam__k">Curso</span><b>Proyecto 3</b></div>
+              <div><span class="lam__k">Año</span><b>2023-1</b></div>
+              <div><span class="lam__k">Autor</span><b>J. C. Molano</b></div>
+              <div class="north"><svg viewBox="0 0 40 40" aria-label="Norte"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 5 L26 30 L20 25 L14 30 Z" fill="currentColor"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="halftone" style="right:2%;top:-30px" aria-hidden="true"></span>
+    </div>
+  </section>
+  <section class="film" id="film-01" aria-label="Del proceso a la maqueta final">
+    <div class="film__sticky">
+      <div class="wrap film__head">
+        <h4><span class="es">Del proceso a la maqueta final</span><span class="en">From process to final model</span></h4>
+        <span class="mono film__prog"><span id="film-n">01</span> / 04</span>
+      </div>
+      <div class="film__track" id="film-track">
+        <figure class="film__fr zoom"><img src="interludio-maqueta-3.webp" alt="Maqueta de trabajo con las barras y la línea roja del paseo" loading="lazy" data-cap="Maqueta de proceso"><figcaption class="mono"><span class="es">Maqueta de proceso</span><span class="en">Process model</span></figcaption></figure>
+        <figure class="film__fr tall zoom"><img src="interludio-maqueta-2.webp" alt="Maqueta final fotografiada desde arriba" loading="lazy" data-cap="Maqueta final, vista superior"><figcaption class="mono"><span class="es">Maqueta final, vista superior</span><span class="en">Final model, top view</span></figcaption></figure>
+        <figure class="film__fr tall zoom"><img src="interludio-maqueta.webp" alt="Maqueta final del conjunto sobre fondo negro" loading="lazy" data-cap="Maqueta final"><figcaption class="mono"><span class="es">Maqueta final</span><span class="en">Final model</span></figcaption></figure>
+        <figure class="film__fr zoom"><img src="interludio-aerea.webp" alt="Vista aérea del conjunto con barras rojas y blancas" loading="lazy" data-cap="Vista aérea"><figcaption class="mono"><span class="es">Vista aérea del render</span><span class="en">Aerial render</span></figcaption></figure>
+      </div>
+      <div class="wrap"><div class="film__bar"><i id="film-bar"></i></div></div>
+    </div>
+  </section>
+</article>
+
+<!-- ================= 02 CENTRO CÍVICO ================= -->
+<article class="proj" id="p02" data-num="02">
+  <div class="p-open">
+    <div class="wrap p-head">
+      <span class="p-num rv">02</span>
+      <h2 class="p-title split rv"><span class="line"><span style="--i:0"><span class="es">Centro</span><span class="en">Civic</span></span></span><span class="line"><span style="--i:1"><span class="serif"><span class="es">cívico</span><span class="en">centre</span></span></span></span></h2>
+    </div>
+    <div class="p-hero sl sl-v" data-n="14" data-img="civico-render.webp" role="img" aria-label="Render del Centro cívico: volumen con fachada de lamas y cubierta ondulada">
+      <div class="card mono"><dl>
+        <dt><span class="es">Curso</span><span class="en">Studio</span></dt><dd><span class="es">Proyecto vertical de técnica</span><span class="en">Vertical studio: technique</span></dd>
+        <dt><span class="es">Periodo</span><span class="en">Term</span></dt><dd>2025-1</dd>
+        <dt><span class="es">Programa</span><span class="en">Brief</span></dt><dd><span class="es">Equipamiento mixto</span><span class="en">Mixed-use civic</span></dd>
+        <dt><span class="es">Enfoque</span><span class="en">Focus</span></dt><dd><span class="es">Viabilidad técnica</span><span class="en">Buildability</span></dd>
+        <dt><span class="es">Equipo</span><span class="en">Team</span></dt><dd>Andrés Galindo</dd>
+      </dl></div>
+    </div>
+  </div>
+  <div class="p-body"><div class="wrap">
+    <div class="p-intro">
+      <h3 class="rv"><span class="es">El programa sale del barrio. La <span class="serif">técnica</span> entra desde el primer día.</span><span class="en">The brief comes from the neighbourhood. <span class="serif">Technique</span> comes in from day one.</span></h3>
+      <div class="txt rv" style="--d:1">
+        <p class="es">El proyecto se diseñó a partir del análisis del contexto social y territorial. Las dinámicas del sitio, sus usos y las necesidades de su población fueron el punto de partida, y la organización del programa y la viabilidad técnica y constructiva se integraron desde las primeras etapas.</p>
+        <p class="en">The project was designed from an analysis of the social and territorial context. The dynamics of the site, its uses and the needs of its people were the starting point, and programme organisation and technical buildability were integrated from the earliest stages.</p>
+        <p class="es">El edificio le da al sector los equipamientos que la comunidad necesita: espacios educativos, recreativos y de vivienda temporal.</p>
+        <p class="en">The building gives the area the facilities its community needs: educational and recreational spaces, plus temporary housing.</p>
+        <ul class="chips mono"><li>Revit</li><li>D5 Render</li><li>Illustrator</li></ul>
+      </div>
+    </div>
+  </div></div>
+  <section class="lam" aria-label="Lámina Centro cívico">
+    <div class="wrap">
+      <div class="lam__frame rv">
+        <div class="lam__grid">
+          <div class="lam__draw">
+            <div class="row r2" style="margin:0">
+              <figure class="fig zoom"><img src="civico-seccion.webp" alt="Corte fugado del edificio mostrando losas y estructura" loading="lazy" data-cap="Corte fugado"></figure>
+              <figure class="fig zoom"><img src="civico-axo.webp" alt="Axonometría del edificio con piel de lamas" loading="lazy" data-cap="Axonometría estructural"></figure>
+            </div>
+            <figure class="fig zoom"><img src="civico-morfo.webp" alt="Morfología del programa: relaciones entre usos dominantes y secundarios" loading="lazy" data-cap="Morfología del programa"></figure>
+          </div>
+          <div class="lam__side">
+            <div><span class="lam__k mono"><span class="es">Lámina</span><span class="en">Sheet</span> 02 / A</span><span class="lam__t"><span class="es">Centro<br>cívico</span><span class="en">Civic<br>centre</span></span></div>
+            <div>
+              <span class="lam__k mono"><span class="es">Programa</span><span class="en">Programme</span></span>
+              <ul class="prog-list" aria-label="Usos del programa">
+                <li><span class="es">Educativo</span><span class="en">Education</span><span class="b"><i style="--w:.92;--d:0"></i></span><span class="n">01</span></li>
+                <li><span class="es">Social</span><span class="en">Social</span><span class="b"><i style="--w:.78;--d:1"></i></span><span class="n">02</span></li>
+                <li><span class="es">Vivienda temp.</span><span class="en">Temp. housing</span><span class="b"><i style="--w:.66;--d:2"></i></span><span class="n">03</span></li>
+                <li><span class="es">Comercial</span><span class="en">Retail</span><span class="b"><i style="--w:.5;--d:3"></i></span><span class="n">04</span></li>
+                <li><span class="es">Administrativo</span><span class="en">Admin</span><span class="b"><i style="--w:.38;--d:4"></i></span><span class="n">05</span></li>
+                <li><span class="es">Servicios</span><span class="en">Services</span><span class="b"><i style="--w:.3;--d:5"></i></span><span class="n">06</span></li>
+              </ul>
+              <p class="mono" style="margin-top:10px;font-size:10.5px;color:var(--paper-dim)"><span class="es">Orden jerárquico del programa, no áreas medidas</span><span class="en">Programme hierarchy, not measured areas</span></p>
+            </div>
+            <div class="cajetin mono">
+              <div><span class="lam__k">Curso</span><b>PVT</b></div>
+              <div><span class="lam__k">Año</span><b>2025-1</b></div>
+              <div><span class="lam__k">Autor</span><b>J. C. Molano</b></div>
+              <div class="scalebar"><svg viewBox="0 0 120 22" aria-label="Escala gráfica"><rect x="0" y="10" width="30" height="6" fill="currentColor"/><rect x="30" y="10" width="30" height="6" fill="none" stroke="currentColor"/><rect x="60" y="10" width="60" height="6" fill="currentColor"/><text x="0" y="7" font-size="7" fill="currentColor">0</text><text x="112" y="7" font-size="7" fill="currentColor">20m</text></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="wineblock" style="left:0;bottom:24px;width:clamp(40px,8vw,120px);height:14px" aria-hidden="true"></span>
+    </div>
+  </section>
+  <section class="sty" id="sty-02" aria-label="Centro cívico paso a paso">
+    <div class="wrap sty__grid">
+      <div class="sty__steps">
+        <div class="sty__step" data-s="0"><span class="mono">01</span><h4><span class="es">Contexto</span><span class="en">Context</span></h4><p><span class="es">El punto de partida fue el análisis del contexto social y territorial: las dinámicas del sitio, sus usos y las necesidades de su población.</span><span class="en">The starting point was an analysis of the social and territorial context: the dynamics of the site, its uses and the needs of its people.</span></p></div>
+        <div class="sty__step" data-s="1"><span class="mono">02</span><h4><span class="es">Volumen y piel</span><span class="en">Volume and skin</span></h4><p><span class="es">Un volumen compacto con vacío central y una piel de lamas que filtra la luz sobre cada planta.</span><span class="en">A compact volume with a central void and a louvred skin that filters light on every floor.</span></p></div>
+        <div class="sty__step" data-s="2"><span class="mono">03</span><h4><span class="es">Corte</span><span class="en">Section</span></h4><p><span class="es">El corte fugado muestra cómo se apilan las losas y cómo se organiza el programa en altura.</span><span class="en">The cutaway section shows how the slabs stack and how the programme is organised vertically.</span></p></div>
+        <div class="sty__step" data-s="3"><span class="mono">04</span><h4><span class="es">Resultado</span><span class="en">Result</span></h4><p><span class="es">Espacios educativos, recreativos y de vivienda temporal para el sector.</span><span class="en">Educational and recreational spaces, plus temporary housing for the area.</span></p></div>
+      </div>
+      <div class="sty__stage">
+        <div class="sty__frame">
+          <img class="sty__img on" src="civico-aerea.webp" alt="Vista aérea del edificio entre árboles" loading="lazy">
+          <img class="sty__img" src="civico-axo.webp" alt="Axonometría con la piel de lamas" loading="lazy">
+          <img class="sty__img" src="civico-seccion.webp" alt="Corte fugado del edificio" loading="lazy" style="object-fit:contain;background:#fff">
+          <img class="sty__img" src="civico-render.webp" alt="Render del edificio terminado" loading="lazy">
+          <div class="sty__ticks mono"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+
+<!-- ================= 03 THE THREE FATES ================= -->
+<article class="proj" id="p03" data-num="03">
+  <div class="p-open">
+    <div class="wrap p-head">
+      <span class="p-num rv">03</span>
+      <h2 class="p-title split rv"><span class="line"><span style="--i:0">The Three</span></span><span class="line"><span style="--i:1"><span class="serif">Fates</span></span></span></h2>
+    </div>
+    <div class="p-hero wipe">
+      <img src="fates-plaza.webp" alt="Render de The Three Fates: plaza con gradas circulares, vegetación y montaña al fondo" data-par=".14" loading="lazy">
+      <div class="card mono"><dl>
+        <dt><span class="es">Curso</span><span class="en">Studio</span></dt><dd><span class="es">Proyecto vertical de forma</span><span class="en">Vertical studio: form</span></dd>
+        <dt><span class="es">Periodo</span><span class="en">Term</span></dt><dd>2024-2</dd>
+        <dt><span class="es">Método</span><span class="en">Method</span></dt><dd><span class="es">Música → arquitectura</span><span class="en">Music → architecture</span></dd>
+        <dt><span class="es">Equipo</span><span class="en">Team</span></dt><dd>María Angélica Díaz Miranda, Felipe Achury</dd>
+      </dl></div>
+    </div>
+  </div>
+  <div class="p-body"><div class="wrap">
+    <div class="p-intro">
+      <h3 class="rv"><span class="es">Una canción leída como plano: sus ritmos, patrones e historia se vuelven <span class="serif">forma</span>.</span><span class="en">A song read as a plan: its rhythms, patterns and story become <span class="serif">form</span>.</span></h3>
+      <div class="txt rv" style="--d:1">
+        <p class="es">Práctica proyectual que buscó transformar una pieza musical en arquitectura. A partir del análisis de sus ritmos y patrones, y de la historia detrás de la canción, llegamos a un lenguaje formal con el que conformamos un proyecto que responde a esa lógica.</p>
+        <p class="en">A design exercise that set out to turn a piece of music into architecture. From an analysis of its rhythms and patterns, and the story behind the song, we arrived at a formal language and built a project that answers to that logic.</p>
+        <p class="es">El programa se reparte en piezas circulares que se encadenan: recibidor, mirador, sala experimental, cafetería, restaurante y centro de exposición.</p>
+        <p class="en">The programme is split into chained circular pieces: reception, lookout, experimental hall, café, restaurant and exhibition centre.</p>
+        <ul class="chips mono"><li>Rhino</li><li>Grasshopper</li><li>D5 Render</li></ul>
+      </div>
+    </div>
+    <div class="rhythm rv">
+      <div>
+        <h4><span class="es">De ritmo a recorrido</span><span class="en">From rhythm to route</span></h4>
+        <p><span class="es">Tres voces, tres pulsos. Cada pieza del proyecto toma el compás de una de ellas, así que sus radios y separaciones siguen el patrón de la canción.</span><span class="en">Three voices, three pulses. Each piece of the project takes the beat of one of them, so radii and spacing follow the song's pattern.</span></p>
+        <div class="legend mono"><span><i style="background:var(--bone)"></i>I</span><span><i style="background:var(--wine-hi)"></i>II</span><span><i style="background:var(--bone-dim)"></i>III</span></div>
+      </div>
+      <canvas id="rhythm" aria-label="Visualización animada de tres ritmos superpuestos" role="img"></canvas>
+    </div>
+  </div></div>
+  <section class="lam" aria-label="Lámina The Three Fates">
+    <div class="wrap">
+      <div class="lam__frame rv">
+        <div class="lam__grid">
+          <div class="lam__draw">
+            <figure class="fig zoom"><img src="fates-planta.webp" alt="Planta general del proyecto con piezas circulares conectadas por senderos" loading="lazy" data-cap="Planta general · elaborada por María Angélica Díaz Miranda"></figure>
+            <figure class="fig zoom"><img src="fates-seccion.webp" alt="Corte longitudinal del proyecto" loading="lazy" data-cap="Corte longitudinal"></figure>
+          </div>
+          <div class="lam__side">
+            <div><span class="lam__k mono"><span class="es">Lámina</span><span class="en">Sheet</span> 03 / A</span><span class="lam__t">The Three<br>Fates</span></div>
+            <div>
+              <span class="lam__k mono"><span class="es">Programa</span><span class="en">Programme</span></span>
+              <ul>
+                <li><span>1</span><span class="es">Recibidor</span><span class="en">Reception</span></li>
+                <li><span>2</span><span class="es">Mirador</span><span class="en">Lookout</span></li>
+                <li><span>3</span><span class="es">Sala experimental</span><span class="en">Experimental hall</span></li>
+                <li><span>4</span><span class="es">Cafetería</span><span class="en">Café</span></li>
+                <li><span>5</span><span class="es">Restaurante</span><span class="en">Restaurant</span></li>
+                <li><span>6</span><span class="es">Centro de exposición</span><span class="en">Exhibition centre</span></li>
+              </ul>
+              <p class="mono" style="margin-top:12px;font-size:10.5px;color:var(--paper-dim)"><span class="es">Planta: María Angélica Díaz Miranda</span><span class="en">Plan drawn by María Angélica Díaz Miranda</span></p>
+            </div>
+            <div class="cajetin mono">
+              <div><span class="lam__k">Curso</span><b>PVF</b></div>
+              <div><span class="lam__k">Año</span><b>2024-2</b></div>
+              <div><span class="lam__k">Autor</span><b>J. C. Molano</b></div>
+              <div class="north"><svg viewBox="0 0 40 40" aria-label="Norte"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 5 L26 30 L20 25 L14 30 Z" fill="currentColor"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="halftone" style="left:-20px;bottom:-40px" aria-hidden="true"></span>
+    </div>
+  </section>
+  <div class="p-body" style="padding-top:clamp(8px,1vw,14px)"><div class="wrap">
+    <div class="vid rv">
+      <video id="fates-video" controls playsinline preload="none" poster="fates-poster.webp">
+        <source src="fates-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="vid__cap mono"><span><span class="es">Video ilustración: de la canción al proyecto</span><span class="en">Illustrated video: from the song to the project</span></span><span>2:02</span></div>
+    <div class="row" style="margin-top:clamp(20px,3vw,40px)">
+      <figure class="fig rv zoom" style="background:transparent"><img src="fates-memoria.webp" alt="Memoria proyectual: referentes, diagrama existencial, secuencia y recorrido del proyecto" loading="lazy" data-cap="Memoria proyectual"></figure>
+    </div>
+    <p class="vid__cap mono"><span><span class="es">Memoria proyectual: de los referentes y el diagrama existencial al recorrido en el parque</span><span class="en">Design memory: from references and the existential diagram to the route through the park</span></span></p>
+    <div class="row r2" style="margin-top:clamp(20px,3vw,40px)">
+      <figure class="fig ar32 rv zoom"><img src="fates-volumetria.webp" alt="Maqueta digital blanca con el contexto urbano" loading="lazy" data-cap="Volumetría en contexto"></figure>
+      <figure class="fig ar32 rv zoom" style="--d:1"><img src="fates-interior.webp" alt="Interior con piso de madera, rampa curva y fachada de vidrio" loading="lazy" data-cap="Interior"></figure>
+    </div>
+  </div></div>
+</article>
+
+<!-- ================= 04 RODR-ES ================= -->
+<article class="proj" id="p04" data-num="04">
+  <div class="p-open">
+    <div class="wrap p-head">
+      <span class="p-num rv">04</span>
+      <h2 class="p-title split rv"><span class="line"><span style="--i:0"><span class="es">Casa de campo</span><span class="en">Country house</span></span></span><span class="line"><span style="--i:1"><span class="serif">Rodr-Es</span></span></span></h2>
+    </div>
+    <div class="p-hero wipe">
+      <img src="rodres-render.webp" alt="Render aéreo de la casa Rodr-Es con cubierta de teja y patio" data-par=".14" loading="lazy">
+      <div class="award mono"><span class="es">Práctica profesional</span><span class="en">Professional practice</span><b>BMP Ingenieros</b></div>
+      <div class="card mono"><dl>
+        <dt><span class="es">Cliente</span><span class="en">Client</span></dt><dd><span class="es">Privado</span><span class="en">Private</span></dd>
+        <dt><span class="es">Año</span><span class="en">Year</span></dt><dd>2025</dd>
+        <dt><span class="es">Lugar</span><span class="en">Site</span></dt><dd>Firavitoba, Boyacá</dd>
+        <dt><span class="es">Tipo</span><span class="en">Type</span></dt><dd><span class="es">Remodelación</span><span class="en">Renovation</span></dd>
+        <dt><span class="es">Rol</span><span class="en">Role</span></dt><dd><span class="es">Levantamiento y diseño</span><span class="en">Survey and design</span></dd>
+      </dl></div>
+    </div>
+  </div>
+  <div class="p-body"><div class="wrap">
+    <div class="p-intro">
+      <h3 class="rv"><span class="es">Una casa de adobe abandonada vuelve a habitarse alrededor de su <span class="serif">patio</span>.</span><span class="en">An abandoned adobe house is lived in again around its <span class="serif">courtyard</span>.</span></h3>
+      <div class="txt rv" style="--d:1">
+        <p class="es">Remodelación y diseño arquitectónico de una casa del cliente que estaba abandonada y que él quería volver a usar. La casa tiene dos partes: una casa original de dos aulas en adobe y una más reciente anexada a ella, que juntas forman una vivienda colonial alrededor de un patio.</p>
+        <p class="en">Renovation and architectural design of a client's abandoned house that he wanted to use again. The house has two parts: an original two-room adobe house and a newer annex, which together form a colonial dwelling around a courtyard.</p>
+        <p class="es">Hice parte del levantamiento del estado actual. Con él rediseñamos el funcionamiento de la casa en diálogo con el cliente y, junto al contratista, buscamos modificar lo existente lo menos posible para reducir costos de obra. El patio central se vuelve el núcleo: articula la circulación y ordena la transición de lo público a lo privado.</p>
+        <p class="en">I took part in surveying the existing state. From it we redesigned how the house works in dialogue with the client and, with the contractor, kept changes to the existing fabric to a minimum to reduce building costs. The central courtyard becomes the core: it organises circulation and the transition from public to private.</p>
+        <ul class="chips mono"><li><span class="es">Levantamiento</span><span class="en">Survey</span></li><li>AutoCAD</li><li>SketchUp</li><li>D5 Render</li></ul>
+      </div>
+    </div>
+    <div class="ba rv" id="ba">
+      <div class="ba__bar">
+        <h4><span class="es">Antes / después</span><span class="en">Before / after</span></h4>
+        <div class="ba__tabs mono" role="group" aria-label="Comparación">
+          <button type="button" aria-pressed="true" data-ba="0"><span class="es">Fachada</span><span class="en">Facade</span></button>
+          <button type="button" aria-pressed="false" data-ba="1"><span class="es">Patio</span><span class="en">Courtyard</span></button>
+        </div>
+      </div>
+      <div class="ba__stage" id="ba-stage">
+        <img id="ba-before" src="rodres-antes-1.webp" alt="Estado actual de la casa">
+        <img id="ba-after" class="ba__after" src="rodres-render.webp" alt="Propuesta de remodelación">
+        <span class="ba__handle" aria-hidden="true"></span>
+        <span class="ba__lbl l mono"><span class="es">Antes</span><span class="en">Before</span></span>
+        <span class="ba__lbl r mono"><span class="es">Propuesta</span><span class="en">Proposal</span></span>
+        <label class="sr" for="ba-range">Deslizar para comparar</label>
+        <input class="ba__range" id="ba-range" type="range" min="0" max="100" value="50">
+      </div>
+      <p class="ba__cap mono" id="ba-cap"></p>
+    </div>
+  </div></div>
+  <section class="lam" aria-label="Lámina Casa Rodr-Es">
+    <div class="wrap">
+      <div class="lam__frame rv">
+        <div class="lam__grid">
+          <div class="lam__draw">
+            <figure class="fig zoom"><img src="rodres-planta.webp" alt="Planta amoblada de la propuesta alrededor del patio" loading="lazy" data-cap="Planta de la propuesta"></figure>
+          </div>
+          <div class="lam__side">
+            <div><span class="lam__k mono"><span class="es">Lámina</span><span class="en">Sheet</span> 04 / A</span><span class="lam__t">Casa<br>Rodr-Es</span></div>
+            <div>
+              <span class="lam__k mono"><span class="es">Proceso</span><span class="en">Process</span></span>
+              <ul>
+                <li><span>1</span><span class="es">Levantamiento del estado actual</span><span class="en">Survey of existing state</span></li>
+                <li><span>2</span><span class="es">Diálogo con el cliente</span><span class="en">Client workshops</span></li>
+                <li><span>3</span><span class="es">Rediseño alrededor del patio</span><span class="en">Redesign around the courtyard</span></li>
+                <li><span>4</span><span class="es">Ajuste con el contratista</span><span class="en">Coordination with contractor</span></li>
+              </ul>
+              <div class="bars" aria-hidden="true"><i style="width:40%"></i><i style="width:70%"></i><i style="width:56%"></i></div>
+            </div>
+            <div class="cajetin mono">
+              <div><span class="lam__k">Oficina</span><b>BMP Ing.</b></div>
+              <div><span class="lam__k">Año</span><b>2025</b></div>
+              <div><span class="lam__k">Lugar</span><b>Firavitoba</b></div>
+              <div class="north"><svg viewBox="0 0 40 40" aria-label="Norte"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 5 L26 30 L20 25 L14 30 Z" fill="currentColor"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="p-body" style="padding-top:clamp(8px,1vw,14px)"><div class="wrap">
+    <div class="row r3">
+      <figure class="fig ar43 rv zoom"><img src="rodres-sala.webp" alt="Sala con sofás curvos y cuadro" loading="lazy" data-cap="Sala"></figure>
+      <figure class="fig ar43 rv zoom" style="--d:1"><img src="rodres-chimenea.webp" alt="Estar con chimenea y biblioteca" loading="lazy" data-cap="Estar con chimenea"></figure>
+      <figure class="fig ar43 rv zoom" style="--d:2"><img src="rodres-comedor.webp" alt="Comedor bajo arco" loading="lazy" data-cap="Comedor"></figure>
+    </div>
+    <div class="row r2b">
+      <figure class="fig ar43 rv zoom"><img src="rodres-pasillo.webp" alt="Pasillo con nicho en arco y mueble de madera" loading="lazy" data-cap="Circulación"></figure>
+      <figure class="fig ar43 rv zoom" style="--d:1"><img src="rodres-corredor.webp" alt="Corredor exterior hacia el patio" loading="lazy" data-cap="Corredor hacia el patio"></figure>
+    </div>
+    <div class="gal" id="gal-rodres">
+      <div class="gal__bar"><h4><span class="es">Más vistas</span><span class="en">More views</span></h4><div style="display:flex;gap:14px;align-items:center"><span class="gal__count mono">10 <span class="es">vistas</span><span class="en">views</span></span><div class="arrows" role="group" aria-label="Desplazar galería"><button type="button" data-scroll="gal-rodres" data-dir="-1" aria-label="Anterior">←</button><button type="button" data-scroll="gal-rodres" data-dir="1" aria-label="Siguiente">→</button></div></div></div>
+      <div class="track" tabindex="0" aria-label="Galería"><figure class="fig zoom"><img src="rodres-g-fachada.webp" alt="Fachada principal" loading="lazy" data-cap="Fachada principal"></figure><figure class="fig zoom"><img src="rodres-g-acceso.webp" alt="Acceso" loading="lazy" data-cap="Acceso"></figure><figure class="fig zoom"><img src="rodres-g-aerea.webp" alt="Vista aérea posterior" loading="lazy" data-cap="Vista aérea posterior"></figure><figure class="fig zoom"><img src="rodres-g-patio.webp" alt="Patio con chimenea exterior" loading="lazy" data-cap="Patio con chimenea exterior"></figure><figure class="fig zoom"><img src="rodres-g-celosia.webp" alt="Patio y celosía de madera" loading="lazy" data-cap="Patio y celosía de madera"></figure><figure class="fig zoom"><img src="rodres-g-escalera.webp" alt="Estar y escalera" loading="lazy" data-cap="Estar y escalera"></figure><figure class="fig zoom"><img src="rodres-g-circulacion.webp" alt="Circulación" loading="lazy" data-cap="Circulación"></figure><figure class="fig zoom"><img src="rodres-g-habitacion.webp" alt="Habitación" loading="lazy" data-cap="Habitación"></figure><figure class="fig zoom"><img src="rodres-g-cocina.webp" alt="Cocina y comedor" loading="lazy" data-cap="Cocina y comedor"></figure><figure class="fig zoom"><img src="rodres-g-bano.webp" alt="Baño" loading="lazy" data-cap="Baño"></figure></div>
+    </div>
+  </div></div>
+</article>
+
+<!-- ================= 05 VAL-LEAL ================= -->
+<article class="proj" id="p05" data-num="05">
+  <div class="p-open">
+    <div class="wrap p-head">
+      <span class="p-num rv">05</span>
+      <h2 class="p-title split rv"><span class="line"><span style="--i:0">Casa</span></span><span class="line"><span style="--i:1"><span class="serif">Val-Leal</span></span></span></h2>
+    </div>
+    <div class="p-hero sl sl-t" data-n="5" data-img="valleal-portada.webp" role="img" aria-label="Render de la casa Val-Leal con cubierta verde y acceso vehicular">
+      <div class="card mono"><dl>
+        <dt><span class="es">Curso</span><span class="en">Studio</span></dt><dd><span class="es">Práctica proyectual IX</span><span class="en">Design studio IX</span></dd>
+        <dt><span class="es">Énfasis</span><span class="en">Focus</span></dt><dd><span class="es">Interiorismo</span><span class="en">Interior design</span></dd>
+        <dt><span class="es">Periodo</span><span class="en">Term</span></dt><dd>2024-2</dd>
+        <dt><span class="es">Equipo</span><span class="en">Team</span></dt><dd><span class="es">Con diseño industrial</span><span class="en">With industrial design</span></dd>
+      </dl></div>
+    </div>
+  </div>
+  <div class="p-body"><div class="wrap">
+    <div class="p-intro">
+      <h3 class="rv"><span class="es">Una casa ajustada a los horarios, recorridos y <span class="serif">rutinas</span> de quienes la habitan.</span><span class="en">A house fitted to the schedules, routes and <span class="serif">routines</span> of the people who live in it.</span></h3>
+      <div class="txt rv" style="--d:1">
+        <p class="es">Proyecto interdisciplinar con estudiantes de diseño industrial. Como grupo reformamos la estructura y el funcionamiento de una vivienda a partir de un estudio profundo de sus habitantes: sus hobbies, recorridos, horarios y necesidades.</p>
+        <p class="en">An interdisciplinary project with industrial design students. As a group we reworked the structure and function of a house from an in-depth study of its residents: their hobbies, routes, schedules and needs.</p>
+        <ul class="chips mono"><li>Revit</li><li>D5 Render</li><li>Photoshop</li></ul>
+      </div>
+    </div>
+  </div></div>
+  <section class="lam" aria-label="Lámina Casa Val-Leal">
+    <div class="wrap">
+      <div class="lam__frame rv">
+        <div class="lam__grid">
+          <div class="lam__draw">
+            <figure class="fig zoom"><img src="valleal-alzados.webp" alt="Alzados sur, norte, oeste y este a escala 1:100" loading="lazy" data-cap="Alzados · Esc. 1:100"></figure>
+            <figure class="fig zoom"><img src="valleal-planta.webp" alt="Planta de primer nivel" loading="lazy" data-cap="Planta primer nivel"></figure>
+          </div>
+          <div class="lam__side">
+            <div><span class="lam__k mono"><span class="es">Lámina</span><span class="en">Sheet</span> 05 / A</span><span class="lam__t">Casa<br>Val-Leal</span></div>
+            <div>
+              <span class="lam__k mono"><span class="es">Contenido</span><span class="en">Contents</span></span>
+              <ul>
+                <li><span>a</span><span class="es">Alzado sur</span><span class="en">South elevation</span></li>
+                <li><span>b</span><span class="es">Alzado norte</span><span class="en">North elevation</span></li>
+                <li><span>c</span><span class="es">Alzados oeste y este</span><span class="en">West and east elevations</span></li>
+                <li><span>d</span><span class="es">Planta primer nivel</span><span class="en">Ground floor plan</span></li>
+              </ul>
+            </div>
+            <div class="cajetin mono">
+              <div><span class="lam__k">Curso</span><b>PP IX</b></div>
+              <div><span class="lam__k">Año</span><b>2024-2</b></div>
+              <div><span class="lam__k">Escala</span><b>1:100</b></div>
+              <div class="north"><svg viewBox="0 0 40 40" aria-label="Norte"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 5 L26 30 L20 25 L14 30 Z" fill="currentColor"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="wineblock" style="right:0;top:40px;width:14px;height:clamp(60px,10vw,160px)" aria-hidden="true"></span>
+    </div>
+  </section>
+  <section class="stk" id="stk-05" aria-label="Recorrido por la Casa Val-Leal">
+    <div class="wrap">
+      <div class="stk__head"><h4><span class="es">Un día en la casa</span><span class="en">A day in the house</span></h4><span class="mono" style="color:var(--bone-dim)"><span class="es">Recorrido en 6 escenas</span><span class="en">Six-scene walkthrough</span></span></div>
+      <figure class="stk__card zoom" style="--k:0"><img src="valleal-cubierta.webp" alt="Cubierta verde" loading="lazy" data-cap="Cubierta verde"><figcaption class="glass stk__cap"><span class="mono">01 / 06</span><b><span class="es">Cubierta verde</span><span class="en">Green roof</span></b><p><span class="es">La casa se entierra bajo una cubierta verde que continúa el paisaje.</span><span class="en">The house sinks under a green roof that carries on the landscape.</span></p></figcaption></figure>
+      <figure class="stk__card zoom" style="--k:1"><img src="valleal-g-fachada.webp" alt="Fachada" loading="lazy" data-cap="Fachada"><figcaption class="glass stk__cap"><span class="mono">02 / 06</span><b><span class="es">Fachada</span><span class="en">Facade</span></b><p><span class="es">Volúmenes de concreto y una escalera exterior que sube a la cubierta.</span><span class="en">Concrete volumes and an outdoor stair rising to the roof.</span></p></figcaption></figure>
+      <figure class="stk__card zoom" style="--k:2"><img src="valleal-g-estar.webp" alt="Estar" loading="lazy" data-cap="Estar"><figcaption class="glass stk__cap"><span class="mono">03 / 06</span><b><span class="es">Estar</span><span class="en">Living</span></b><p><span class="es">Estructura a la vista y luz rasante entre los muros.</span><span class="en">Exposed structure and low light between the walls.</span></p></figcaption></figure>
+      <figure class="stk__card zoom" style="--k:3"><img src="valleal-interior.webp" alt="Zona social" loading="lazy" data-cap="Zona social"><figcaption class="glass stk__cap"><span class="mono">04 / 06</span><b><span class="es">Zona social</span><span class="en">Shared space</span></b><p><span class="es">Comedor y cocina pensados para los horarios compartidos de la familia.</span><span class="en">Dining and kitchen shaped around the family’s shared routines.</span></p></figcaption></figure>
+      <figure class="stk__card zoom" style="--k:4"><img src="valleal-sala.webp" alt="Sala" loading="lazy" data-cap="Sala"><figcaption class="glass stk__cap"><span class="mono">05 / 06</span><b><span class="es">Sala</span><span class="en">Lounge</span></b><p><span class="es">La sala se ajusta a los hobbies y recorridos de quienes la habitan.</span><span class="en">The lounge fits the hobbies and routes of the people who live there.</span></p></figcaption></figure>
+      <figure class="stk__card zoom" style="--k:5"><img src="valleal-g-habitacion.webp" alt="Descanso" loading="lazy" data-cap="Descanso"><figcaption class="glass stk__cap"><span class="mono">06 / 06</span><b><span class="es">Descanso</span><span class="en">Rest</span></b><p><span class="es">La habitación cierra el recorrido frente al paisaje.</span><span class="en">The bedroom ends the route facing the landscape.</span></p></figcaption></figure>
+    </div>
+  </section>
+</article>
+
+
+<!-- ================= OTROS PROYECTOS ================= -->
+<section class="otros" id="otros" aria-labelledby="otros-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="otros-h"><span class="es">Otros <span class="serif">proyectos</span></span><span class="en">More <span class="serif">projects</span></span></h2>
+      <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <p><span class="es">Encargos profesionales y ejercicios académicos recientes, en formato corto.</span><span class="en">Recent professional commissions and academic exercises, in short form.</span></p>
+        <div class="arrows" role="group" aria-label="Desplazar proyectos"><button type="button" data-scroll="otros-track" data-dir="-1" aria-label="Anterior">←</button><button type="button" data-scroll="otros-track" data-dir="1" aria-label="Siguiente">→</button></div>
+      </div>
+    </div>
+    <div class="otros__track" id="otros-track" tabindex="0" aria-label="Otros proyectos"></div>
+  </div>
+</section>
+
+<div class="fx" id="fx" hidden role="dialog" aria-modal="true" aria-labelledby="fx-t">
+  <div class="fx__box">
+    <button type="button" class="fx__close mono" id="fx-close"><span class="es">Cerrar ✕</span><span class="en">Close ✕</span></button>
+    <div class="fx__media"><img class="fx__main" id="fx-main" alt=""><p class="fx__cap mono" id="fx-cap"></p><div class="fx__thumbs" id="fx-thumbs"></div></div>
+    <div class="fx__info">
+      <span class="mono" id="fx-k" style="color:var(--wine-hi)"></span>
+      <h3 id="fx-t"></h3>
+      <dl class="mono" id="fx-dl"></dl>
+      <div class="txt" id="fx-txt"></div>
+      <div class="fx__nav mono"><button type="button" id="fx-prev">← <span class="es">Anterior</span><span class="en">Previous</span></button><button type="button" id="fx-next"><span class="es">Siguiente</span><span class="en">Next</span> →</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TALLER ================= -->
+<section class="taller" id="taller" aria-labelledby="taller-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="taller-h"><span class="es">Taller</span><span class="en">Studio</span></h2>
+      <p><span class="es">Maquetas, bitácora y medios artísticos. El trabajo a mano que acompaña cada proyecto.</span><span class="en">Models, sketchbook and art media. The hand work behind each project.</span></p>
+    </div>
+    <div class="filters mono" role="group" aria-label="Filtrar taller">
+      <button type="button" aria-pressed="true" data-f="all"><span class="es">Todo</span><span class="en">All</span></button>
+      <button type="button" aria-pressed="false" data-f="m"><span class="es">Maquetas</span><span class="en">Models</span></button>
+      <button type="button" aria-pressed="false" data-f="s"><span class="es">Bitácora</span><span class="en">Sketchbook</span></button>
+      <button type="button" aria-pressed="false" data-f="a"><span class="es">Arte</span><span class="en">Art</span></button>
+    </div>
+    <div class="tall" id="tall">
+      <figure class="t zoom" data-k="m"><img src="maqueta-pva.webp" alt="Maqueta PVA con borde de agua azul y árboles rojos" loading="lazy" data-cap="Maqueta final · PVA"><span class="v">PVA</span><span class="c mono"><span class="es">Maqueta final</span><span class="en">Final model</span></span></figure>
+      <figure class="t zoom" data-k="s"><img src="sketch-2.webp" alt="Sketch en bolígrafo de una casa en ladera" loading="lazy" data-cap="Bitácora · bolígrafo"><span class="v">Sketch</span><span class="c mono"><span class="es">Bitácora · bolígrafo</span><span class="en">Sketchbook · ballpoint</span></span></figure>
+      <figure class="t zoom" data-k="m"><img src="maqueta-reticulado.webp" alt="Maqueta de reticulado de doble pared en palitos" loading="lazy" data-cap="Reticulado de doble pared · Sistemas portantes"><span class="v"><span class="es">Reticulado</span><span class="en">Lattice</span></span><span class="c mono"><span class="es">Sistemas portantes</span><span class="en">Structural systems</span></span></figure>
+      <figure class="t zoom" data-k="a"><img src="arte-procreate.webp" alt="Ilustración digital de un niño con bufanda roja y un zorro" loading="lazy" data-cap="Ilustración digital · Procreate"><span class="v">Procreate</span><span class="c mono"><span class="es">Ilustración digital</span><span class="en">Digital illustration</span></span></figure>
+      <figure class="t zoom" data-k="m"><img src="maqueta-ppix.webp" alt="Maqueta escala 1:100 de la casa Val-Leal" loading="lazy" data-cap="Maqueta 1:100 · Práctica proyectual IX"><span class="v">1:100</span><span class="c mono">Práctica proyectual IX</span></figure>
+      <figure class="t zoom" data-k="s"><img src="sketch-1.webp" alt="Sketch en bolígrafo de una cubierta curva" loading="lazy" data-cap="Bitácora · bolígrafo"><span class="v">Sketch</span><span class="c mono"><span class="es">Bitácora</span><span class="en">Sketchbook</span></span></figure>
+      <figure class="t zoom" data-k="m"><img src="maqueta-pvf.webp" alt="Maqueta PVF con recorrido morado" loading="lazy" data-cap="Maqueta final · PVF"><span class="v">PVF</span><span class="c mono"><span class="es">Maqueta final</span><span class="en">Final model</span></span></figure>
+      <figure class="t zoom" data-k="a"><img src="arte-acuarela.webp" alt="Acuarela de orquídeas azules" loading="lazy" data-cap="Acuarela · Medios artísticos"><span class="v"><span class="es">Acuarela</span><span class="en">Watercolour</span></span><span class="c mono"><span class="es">Medios artísticos</span><span class="en">Art media</span></span></figure>
+      <figure class="t zoom" data-k="m"><img src="maqueta-visor.webp" alt="Maqueta visor iluminada de un interior" loading="lazy" data-cap="Maqueta visor · Práctica proyectual IX"><span class="v">Visor</span><span class="c mono">Práctica proyectual IX</span></figure>
+      <figure class="t zoom" data-k="s"><img src="sketch-3.webp" alt="Sketch en bolígrafo de un volumen en esquina" loading="lazy" data-cap="Bitácora · bolígrafo"><span class="v">Sketch</span><span class="c mono"><span class="es">Bitácora</span><span class="en">Sketchbook</span></span></figure>
+      <figure class="t zoom" data-k="m"><img src="maqueta-p1.webp" alt="Maqueta blanca de proyecto 1 con árboles" loading="lazy" data-cap="Maqueta final · Proyecto 1"><span class="v"><span class="es">Proyecto 1</span><span class="en">Studio 1</span></span><span class="c mono"><span class="es">Maqueta final</span><span class="en">Final model</span></span></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERFIL ================= -->
+<section class="perfil" id="perfil" aria-label="Perfil">
+  <div class="col c1">
+    <span class="big rv"><span class="es">Perfil</span><span class="en">Profile</span></span>
+    <p class="rv" style="--d:1;max-width:40ch"><span class="es">Estudiante de pregrado en arquitectura, en noveno semestre. Me interesa el diseño como arte. Aprendo rápido y busco resolver los problemas de la manera más simple y efectiva.</span><span class="en">Undergraduate architecture student in the ninth semester. I'm drawn to design as an art. I learn fast and look for the simplest, most effective way to solve problems.</span></p>
+    <div class="rv" style="--d:2">
+      <h4><span class="es">Educación</span><span class="en">Education</span></h4>
+      <ul>
+        <li><b>Universidad Nacional de Colombia</b><span><span class="es">Pregrado en Arquitectura · 9.º semestre</span><span class="en">BArch · 9th semester</span></span></li>
+        <li><b>Colegio Corazonista</b><span><span class="es">Bachillerato · Bogotá</span><span class="en">High school · Bogotá</span></span></li>
+      </ul>
+    </div>
+    <div class="rv" style="--d:3">
+      <h4><span class="es">Idiomas</span><span class="en">Languages</span></h4>
+      <ul><li><b><span class="es">Español</span><span class="en">Spanish</span></b><span><span class="es">Nativo</span><span class="en">Native</span></span></li><li><b><span class="es">Inglés</span><span class="en">English</span></b><span>B2</span></li></ul>
+    </div>
+  </div>
+  <div class="col c2">
+    <span class="big rv"><span class="es">Obra</span><span class="en">Work</span></span>
+    <div class="rv" style="--d:1">
+      <h4><span class="es">Experiencia</span><span class="en">Experience</span></h4>
+      <ul>
+        <li><b>BMP Ingenieros</b><span><span class="es">Diseño de dos proyectos de restauración y renovación arquitectónica en vivienda unifamiliar.</span><span class="en">Design of two restoration and renovation projects for single-family homes.</span></span></li>
+        <li><b>B&amp;M HSEQ Ingeniería Integral</b><span><span class="es">Apoyo en levantamiento y dibujo de planimetría para rutas de evacuación.</span><span class="en">Survey support and drawings for emergency evacuation routes.</span></span></li>
+      </ul>
+    </div>
+    <div class="rv" style="--d:2">
+      <h4><span class="es">Reconocimientos</span><span class="en">Recognition</span></h4>
+      <ul><li><b>Salón de Octubre 2023</b><span><span class="es">Seleccionado con Interludio carmesí · Manizales</span><span class="en">Selected with Interludio carmesí · Manizales</span></span></li></ul>
+    </div>
+  </div>
+  <div class="col c3">
+    <span class="big rv">Software</span>
+    <ul class="sw mono rv" style="--d:1" aria-label="Nivel de software de 1 a 5">
+      <li>Revit<span class="lv" aria-label="5 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+      <li>Rhino<span class="lv" aria-label="5 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+      <li>AutoCAD<span class="lv" aria-label="4 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+      <li>SketchUp<span class="lv" aria-label="4 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+      <li>D5 Render<span class="lv" aria-label="4 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+      <li>Illustrator<span class="lv" aria-label="4 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+      <li>Procreate<span class="lv" aria-label="4 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+      <li>Photoshop<span class="lv" aria-label="3 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+      <li>Grasshopper<span class="lv" aria-label="3 de 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="contact" id="contacto" aria-labelledby="c-h">
+  <div class="contact__bg"><img src="cierre.webp" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <span class="tag mono"><span class="es">Contacto</span><span class="en">Contact</span></span>
+    <h2 id="c-h" class="split rv"><span class="line"><span style="--i:0"><span class="es">Hablemos</span><span class="en">Let's talk</span></span></span><span class="line"><span style="--i:1"><span class="serif"><span class="es">de arquitectura</span><span class="en">architecture</span></span></span></span></h2>
+    <div class="cgrid mono">
+      <div><span style="color:var(--bone-dim)">Email</span><span class="v" id="c-mail">juancamilomolano4@gmail.com</span><button class="copy mono" type="button" data-copy="c-mail"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+      <div><span style="color:var(--bone-dim)"><span class="es">Teléfono</span><span class="en">Phone</span></span><span class="v" id="c-tel">+57 320 889 8946</span><button class="copy mono" type="button" data-copy="c-tel"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+      <div><span style="color:var(--bone-dim)"><span class="es">Ciudad</span><span class="en">City</span></span><span class="v">Bogotá, Colombia</span></div>
+    </div>
+    <div class="foot mono"><span>© 2026 Juan Camilo Molano</span><span><span class="es">Portafolio de arquitectura</span><span class="en">Architecture portfolio</span></span><a href="#top"><span class="es">Volver arriba ↑</span><span class="en">Back to top ↑</span></a></div>
+  </div>
+</section>
+</main>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <button type="button" class="mono" id="lb-close"><span class="es">Cerrar ✕</span><span class="en">Close ✕</span></button>
+  <figure style="margin:0;text-align:center"><img id="lb-img" alt=""><p class="mono" id="lb-cap"></p></figure>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, body=document.body;
+  root.classList.add('js');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* language */
+  function setLang(l){
+    body.classList.toggle('en',l==='en');
+    document.getElementById('lang-es').setAttribute('aria-pressed',l!=='en');
+    document.getElementById('lang-en').setAttribute('aria-pressed',l==='en');
+    root.lang=l==='en'?'en':'es';
+    try{localStorage.setItem('jcm-lang',l)}catch(e){}
+    baCaption();
+  }
+  document.getElementById('lang-es').onclick=function(){setLang('es')};
+  document.getElementById('lang-en').onclick=function(){setLang('en')};
+
+  /* hero load */
+
+  /* reveal */
+  var els=document.querySelectorAll('.rv,.wipe,.lam__frame');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+  setTimeout(function(){document.querySelectorAll('.rv,.wipe').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add('in')})},2500);
+
+  /* scroll: parallax, progress, nav state */
+  var par=[].slice.call(document.querySelectorAll('[data-par]')), parx=[].slice.call(document.querySelectorAll('[data-parx]'));
+  var prog=document.getElementById('prog'), count=document.getElementById('count');
+  var projs=[].slice.call(document.querySelectorAll('.proj'));
+  var navs={};document.querySelectorAll('[data-nav]').forEach(function(a){navs[a.dataset.nav]=a});
+  var ticking=false;
+  function onScroll(){
+    ticking=false;
+    var vh=innerHeight, y=scrollY, h=document.documentElement.scrollHeight-vh;
+    prog.style.transform='scaleX('+(h>0?y/h:0)+')';
+    if(!reduce){
+      par.forEach(function(img){var r=img.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>vh)return;var p=(r.top+r.height/2-vh/2)/vh;img.style.transform='translate3d(0,'+(-8+p*parseFloat(img.dataset.par)*-100)+'%,0)'});
+      parx.forEach(function(el){var r=el.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>vh)return;var p=(r.top-vh/2)/vh;el.style.transform='translateY(-50%) rotate(-14deg) translateX('+(p*parseFloat(el.dataset.parx)*100)+'%)'});
+    }
+    var cur='00', sec=null;
+    projs.forEach(function(p){var r=p.getBoundingClientRect();if(r.top<vh*.5&&r.bottom>vh*.5)cur=p.dataset.num});
+    ['proyectos','otros','taller','perfil','contacto'].forEach(function(id){var el=document.getElementById(id);var r=el.getBoundingClientRect();if(r.top<vh*.5&&r.bottom>vh*.5)sec=id});
+    if(cur!=='00')sec='proyectos';
+    count.textContent=cur+' / 05';
+    Object.keys(navs).forEach(function(k){navs[k].setAttribute('aria-current',k===sec)});
+  }
+  var lastY=-1;(function loop(){if(scrollY!==lastY){lastY=scrollY;onScroll()}requestAnimationFrame(loop)})();
+  addEventListener('resize',onScroll);onScroll();
+
+  /* before / after */
+  var pairs=[
+    {b:'rodres-antes-1.webp',a:'rodres-render.webp',c:['Fachada: estado actual frente a la propuesta','Facade: existing state vs. proposal'],contain:false},
+    {b:'rodres-antes-patio.webp',a:'rodres-corredor.webp',c:['Patio: muros de adobe hoy frente al corredor propuesto','Courtyard: adobe walls today vs. the proposed gallery'],contain:false}
+  ];
+  var cur=0, stage=document.getElementById('ba-stage'), bb=document.getElementById('ba-before'), ba=document.getElementById('ba-after'), range=document.getElementById('ba-range');
+  function baCaption(){var en=body.classList.contains('en');document.getElementById('ba-cap').textContent=pairs[cur].c[en?1:0]}
+  function setPair(i){cur=i;var p=pairs[i];bb.src=p.b;ba.src=p.a;bb.classList.toggle('contain',p.contain);ba.classList.toggle('contain',p.contain);document.querySelectorAll('[data-ba]').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.ba===i)});baCaption()}
+  document.querySelectorAll('[data-ba]').forEach(function(b){b.onclick=function(){setPair(+b.dataset.ba)}});
+  range.addEventListener('input',function(){stage.style.setProperty('--x',range.value+'%')});
+  stage.addEventListener('pointermove',function(e){if(e.pointerType!=='mouse')return;var r=stage.getBoundingClientRect();var v=Math.max(0,Math.min(100,(e.clientX-r.left)/r.width*100));range.value=v;stage.style.setProperty('--x',v+'%')});
+
+  /* taller filters */
+  document.querySelectorAll('[data-f]').forEach(function(b){b.onclick=function(){var f=b.dataset.f;document.querySelectorAll('[data-f]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.querySelectorAll('#tall .t').forEach(function(t){t.hidden=!(f==='all'||t.dataset.k===f)});document.getElementById('tall').scrollLeft=0}});
+
+  /* lightbox */
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lb-img'), lbCap=document.getElementById('lb-cap');
+  document.addEventListener('click',function(e){var z=e.target.closest('.zoom');if(!z)return;var img=z.querySelector('img');if(!img)return;lbImg.src=img.currentSrc||img.src;lbImg.alt=img.alt;lbCap.textContent=img.dataset.cap||img.alt;lb.hidden=false;document.getElementById('lb-close').focus()});
+  function closeLb(){lb.hidden=true}
+  document.getElementById('lb-close').onclick=closeLb;
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
+  addEventListener('keydown',function(e){if(e.key==='Escape')closeLb()});
+
+  /* copy */
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.onclick=function(){var el=document.getElementById(b.dataset.copy);var t=el.textContent;var done=function(){var en=body.classList.contains('en');b.textContent=en?'Copied':'Copiado';setTimeout(function(){b.innerHTML='<span class="es">Copiar</span><span class="en">Copy</span>'},1600)};var sel=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)};try{navigator.clipboard.writeText(t).then(done,sel)}catch(err){sel()}}});
+
+  /* rhythm canvas (Three Fates) */
+  var cv=document.getElementById('rhythm');
+  if(cv){
+    var ctx=cv.getContext('2d'), W=0,H=0, vis=false, t0=performance.now();
+    var cs=getComputedStyle(root), colors=[cs.getPropertyValue('--bone').trim(),cs.getPropertyValue('--wine-hi').trim(),cs.getPropertyValue('--bone-dim').trim()];
+    function size(){var r=cv.getBoundingClientRect(),d=Math.min(2,devicePixelRatio||1);W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0)}
+    size();addEventListener('resize',function(){size();draw(performance.now())});
+    var beats=[3,4,7];
+    function draw(now){
+      var t=reduce?0:(now-t0)/1000;ctx.clearRect(0,0,W,H);
+      var n=Math.floor(W/7), lane=H/3;
+      for(var v=0;v<3;v++){
+        ctx.fillStyle=colors[v];
+        for(var i=0;i<n;i++){
+          var on=(i%beats[v]===0)?1:.28;
+          var amp=on*(.45+.55*Math.abs(Math.sin(i*.35+t*(1.2+v*.5)+v)));
+          var h=Math.max(1.5,amp*(lane-6));
+          ctx.fillRect(i*7,v*lane+(lane-h)/2,3,h);
+        }
+      }
+      if(vis&&!reduce)requestAnimationFrame(draw);
+    }
+    new IntersectionObserver(function(es){vis=es[0].isIntersecting;if(vis)requestAnimationFrame(draw)}).observe(cv);
+    draw(performance.now());
+  }
+
+
+  /* ---------- hero: brutalist collage ---------- */
+  var bx=document.getElementById('hero'), bs=document.getElementById('bx-stage');
+  setTimeout(function(){bx.classList.add('go')},80);
+  if(!reduce&&matchMedia('(pointer:fine)').matches){
+    bx.addEventListener('pointermove',function(e){var r=bs.getBoundingClientRect();bs.style.setProperty('--px',((e.clientX-r.left)/r.width-.5).toFixed(3));bs.style.setProperty('--py',((e.clientY-r.top)/r.height-.5).toFixed(3))});
+    bx.addEventListener('pointerleave',function(){bs.style.setProperty('--px',0);bs.style.setProperty('--py',0)});
+  }
+  /* ---------- scroll buttons ---------- */
+  document.addEventListener('click',function(e){var b=e.target.closest('[data-scroll]');if(!b)return;var el=document.getElementById(b.dataset.scroll);if(el.classList.contains('gal'))el=el.querySelector('.track');el.scrollBy({left:(+b.dataset.dir)*el.clientWidth*.8,behavior:reduce?'auto':'smooth'})});
+
+  /* ---------- otros proyectos ---------- */
+  var OTROS=[
+    {id:'faca',k:['BMP Ingenieros · proyecto asociado','BMP Ingenieros · associated project'],t:['Casa Faca','Casa Faca'],imgs:['faca-1','faca-2','faca-3','faca-4'],
+     dl:[['Año','Year','2026'],['Oficina','Office','BMP Ingenieros'],['Tipo','Type',['Vivienda campestre','Country house']],['Estado','Status',['En desarrollo','In progress']]],
+     p:[['Casa campestre de un nivel con cubiertas en teja, muros claros y una galería abierta hacia la piscina y el paisaje.','A single-storey country house with tiled roofs, light walls and an open gallery facing the pool and the landscape.'],['Proyecto asociado con BMP Ingenieros, desarrollado con planos para curaduría.','Associated project with BMP Ingenieros, developed through planning-permit drawings.']]},
+    {id:'tasuga',k:['BMP Ingenieros · proyecto asociado','BMP Ingenieros · associated project'],t:['Baño de servicio exterior','Outdoor service bathroom'],imgs:['tasuga-2','tasuga-casa','tasuga-1','tasuga-planta'],
+     dl:[['Año','Year','2026'],['Oficina','Office','BMP Ingenieros'],['Uso','Use',['Servicio para trabajadores','Staff facilities']],['Contexto','Context',['Casa de 2.000 m²','2,000 m² house']]],
+     p:[['Baño de servicio exterior para los trabajadores de una casa de 2.000 m². Un volumen compacto de concreto con cubierta verde y casilleros en madera que retoma el lenguaje de la casa principal: concreto, madera y vegetación sobre la cubierta.','An outdoor service bathroom for the staff of a 2,000 m² house. A compact concrete volume with a green roof and timber lockers that picks up the language of the main house: concrete, timber and planting on the roof.'],['Desarrollado en Revit con planos acotados y cantidades de obra.','Developed in Revit with dimensioned drawings and quantity take-offs.']]},
+    {id:'soacha',k:['BMP Ingenieros · proyecto asociado','BMP Ingenieros · associated project'],t:['Portería Soacha','Soacha gatehouse'],imgs:['soacha-2','soacha-1','soacha-3','soacha-4'],
+     dl:[['Año','Year','2026'],['Oficina','Office','BMP Ingenieros'],['Rol','Role',['Arquitecto diseñador','Design architect']],['Lugar','Site','Soacha'],['Tipo','Type',['Remodelación de portería','Gatehouse renovation']]],
+     p:[['Remodelación de una portería de acceso. Como arquitecto diseñador tomé las decisiones de diseño para reorganizar la recepción, el control con torniquetes, el depósito y el cuarto de basuras en una planta compacta y luminosa.','Renovation of an entrance gatehouse. As design architect I made the design decisions to reorganise the reception, turnstile control, storage and waste room into a compact, well-lit plan.']]},
+    {id:'emilia',k:['BMP Ingenieros · proyecto asociado','BMP Ingenieros · associated project'],t:['Casa Emilia','Casa Emilia'],imgs:['emilia-1','emilia-2','emilia-3','emilia-4'],
+     dl:[['Año','Year','2025'],['Oficina','Office','BMP Ingenieros'],['Rol','Role',['Arquitecto diseñador','Design architect']],['Tipo','Type',['Remodelación de vivienda','House renovation']]],
+     p:[['Remodelación de una vivienda de un nivel. Como arquitecto diseñador definí las decisiones de diseño: un corredor cubierto en su perímetro, zonas sociales abiertas y habitaciones organizadas alrededor de un núcleo de servicios.','Renovation of a single-storey house. As design architect I set the design decisions: a covered perimeter porch, open living areas and bedrooms arranged around a service core.']]},
+    {id:'enfasis',k:['Papilio 90 · Pabellón 04','Papilio 90 · Pavilion 04'],t:['Pabellón Énfasis Tecnológico','Technology Emphasis Pavilion'],
+     imgs:['enfasis-1','enfasis-axo','enfasis-planta','enfasis-secciones','enfasis-ensambles','enfasis-armado-1','enfasis-armado-2','enfasis-explosion','enfasis-iteraciones','enfasis-sitio','enfasis-2','enfasis-3','enfasis-4','enfasis-libro'],
+     dr:['enfasis-axo','enfasis-planta','enfasis-secciones','enfasis-ensambles','enfasis-armado-1','enfasis-armado-2','enfasis-explosion','enfasis-iteraciones','enfasis-sitio'],
+     caps:[['Render en la plaza','Render in the plaza'],['Dibujo técnico de análisis: los hitos marcan cambios de ritmo','Analytical drawing: landmarks mark changes of rhythm'],['Planimetría','Plan'],['Secciones transversal y longitudinal','Cross and long sections'],['Ensambles y detalle constructivo','Joints and construction detail'],['Secuencia de armado, pasos 01 a 09','Assembly sequence, steps 01 to 09'],['Secuencia de armado, pasos 10 a 15, y prototipo','Assembly sequence, steps 10 to 15, and prototype'],['Recorrido e hitos','Route and landmarks'],['Iteraciones de forma','Form iterations'],['Implantación','Site plan'],['Render','Render'],['Render','Render'],['Render','Render'],['Capítulo 04 en el libro Papilio 90','Chapter 04 in the book Papilio 90']],
+     dl:[['Periodo','Term','2026-1'],['Curso','Studio',['Énfasis tecnológico','Technology emphasis']],['Pabellón','Pavilion','04 Interludio'],['Libro','Book','Papilio 90'],['Equipo','Team','Santiago Andrés Villamizar Orduz'],['Material','Material',['Durmientes de madera 4 × 4 cm','4 × 4 cm timber battens']],['Lugar','Site',['Nuevos Espacios de las Artes, UNAL Bogotá','Nuevos Espacios de las Artes, UNAL Bogotá']]],
+     p:[['En música, el interludio es el fragmento entre dos momentos principales: el espacio de transición donde una idea termina de resolverse y otra empieza. El pabellón lleva esa idea a los 90 años del programa de Arquitectura de la Universidad Nacional, como una reflexión espacial sobre el cambio y la permanencia en lugar de una línea cronológica.','In music, an interlude is the passage between two main moments: the transition where one idea resolves and another begins. The pavilion brings that idea to the 90th anniversary of the Universidad Nacional architecture programme, as a spatial reflection on change and permanence rather than a timeline.'],
+        ['Se construye sobre tres principios: ligereza, desmontabilidad y supraciclaje. Durmientes de madera de 4 × 4 cm, en piezas de 2 m y de 0,8 m alternadas en perpendicular, forman una celosía tridimensional autoportante. La estabilidad viene del peso, la geometría y el apilamiento, con bridas solo en los nodos críticos.','It rests on three principles: lightness, demountability and upcycling. 4 × 4 cm timber battens, in 2 m and 0.8 m pieces alternated at right angles, form a self-supporting three-dimensional lattice. Stability comes from weight, geometry and stacking, with ties only at the critical nodes.'],
+        ['La secuencia de muros avanza, se quiebra y se reorienta. Desde la rampa de la plaza, dos curvas orientan la mirada hacia el lugar del edificio original de la Escuela y hacia el antiguo CINVA, hoy SINDU.','The sequence of walls advances, breaks and turns. From the plaza ramp, two curves direct the eye toward the site of the School’s original building and toward the former CINVA, now SINDU.']]},
+    {id:'celosia',k:['Morfología estructural · 2026-1','Structural morphology · 2026-1'],t:['Celosía ondulatoria','Wave lattice'],imgs:['celosia-1','celosia-2','celosia-3','celosia-4'],
+     dl:[['Periodo','Term','2026-1'],['Curso','Course',['Morfología estructural','Structural morphology']],['Tipo','Type',['Módulo replicable','Replicable module']]],
+     p:[['Un módulo replicable para uso arquitectónico, inspirado en formas de la naturaleza. Este parte de las ondas como forma de propagación de energía, que genera geometrías en los medios que atraviesa.','A replicable module for architectural use, inspired by natural forms. It starts from waves as a way energy propagates, generating geometries in the media it travels through.'],['El resultado es un módulo apilable y configurable que forma celosías cuya apertura cambia según el ángulo de vista.','The result is a stackable, configurable module that forms lattices whose openness changes with the viewing angle.']]}
+  ];
+  function L(x){return Array.isArray(x)?(body.classList.contains('en')?x[1]:x[0]):x}
+  function bi(x){return Array.isArray(x)?'<span class="es">'+x[0]+'</span><span class="en">'+x[1]+'</span>':x}
+  var ot=document.getElementById('otros-track');
+  ot.innerHTML=OTROS.map(function(o,i){
+    return '<button type="button" class="oc" data-o="'+i+'"><div class="oc__img"><span class="oc__tag mono'+(i<4?' w':'')+'">'+bi(o.k)+'</span><img src="'+o.imgs[0]+'.webp" alt="" loading="lazy"><img src="'+o.imgs[1]+'.webp" alt="" loading="lazy"></div><span class="oc__t">'+bi(o.t)+'</span><span class="oc__d">'+bi(o.p[0])+'</span><span class="oc__open mono"><span class="es">Ver ficha</span><span class="en">View project</span></span></button>';
+  }).join('');
+  var fx=document.getElementById('fx'), fxMain=document.getElementById('fx-main'), fxCur=0, fxLast=null;
+  function fxImg(o,j){fxMain.src=''+o.imgs[j]+'.webp';fxMain.alt=o.caps?L(o.caps[j]):L(o.t);fxMain.classList.toggle('dr',!!(o.dr&&o.dr.indexOf(o.imgs[j])>-1));document.getElementById('fx-cap').innerHTML=o.caps?bi(o.caps[j]):'';document.querySelectorAll('#fx-thumbs button').forEach(function(b,k){b.setAttribute('aria-pressed',k===j)})}
+  function fxOpen(i){
+    fxCur=(i+OTROS.length)%OTROS.length;var o=OTROS[fxCur];
+    document.getElementById('fx-k').innerHTML=bi(o.k);document.getElementById('fx-t').innerHTML=bi(o.t);
+    document.getElementById('fx-dl').innerHTML=o.dl.map(function(d){return '<dt><span class="es">'+d[0]+'</span><span class="en">'+d[1]+'</span></dt><dd>'+bi(d[2])+'</dd>'}).join('');
+    document.getElementById('fx-txt').innerHTML=o.p.map(function(x){return '<p>'+bi(x)+'</p>'}).join('');
+    document.getElementById('fx-thumbs').innerHTML=o.imgs.map(function(m,k){return '<button type="button" aria-label="Imagen '+(k+1)+'" data-k="'+k+'"><img src="'+m+'.webp" alt=""></button>'}).join('');
+    fxImg(o,0);fx.hidden=false;document.body.style.overflow='hidden';document.getElementById('fx-close').focus();
+  }
+  function fxClose(){fx.hidden=true;document.body.style.overflow='';if(fxLast)fxLast.focus()}
+  ot.addEventListener('click',function(e){var c=e.target.closest('.oc');if(!c)return;fxLast=c;fxOpen(+c.dataset.o)});
+  document.getElementById('fx-thumbs').addEventListener('click',function(e){var b=e.target.closest('button');if(b)fxImg(OTROS[fxCur],+b.dataset.k)});
+  document.getElementById('fx-close').onclick=fxClose;
+  document.getElementById('fx-prev').onclick=function(){fxOpen(fxCur-1)};
+  document.getElementById('fx-next').onclick=function(){fxOpen(fxCur+1)};
+  fx.addEventListener('click',function(e){if(e.target===fx)fxClose()});
+  fxMain.addEventListener('click',function(){lbImg.src=fxMain.src;lbImg.alt=fxMain.alt;lbCap.textContent=fxMain.alt;lb.hidden=false;document.getElementById('lb-close').focus()});
+  addEventListener('keydown',function(e){if(fx.hidden||!lb.hidden)return;if(e.key==='Escape'&&lb.hidden)fxClose();if(e.key==='ArrowRight'&&lb.hidden)fxOpen(fxCur+1);if(e.key==='ArrowLeft'&&lb.hidden)fxOpen(fxCur-1)},true);
+
+  /* pause the video when it leaves the screen */
+  var fv=document.getElementById('fates-video');
+  if(fv&&'IntersectionObserver' in window){new IntersectionObserver(function(es){if(!es[0].isIntersecting&&!fv.paused)fv.pause()}).observe(fv)}
+
+
+  /* ---------- sliced heroes ---------- */
+  document.querySelectorAll('.sl').forEach(function(el){
+    var n=+el.dataset.n, url=el.dataset.img, h=el.classList.contains('sl-h')||el.classList.contains('sl-t'), frag=document.createDocumentFragment();
+    for(var k=0;k<n;k++){
+      var sdiv=document.createElement('div');sdiv.className='s';sdiv.style.setProperty('--k',k);
+      var inner=document.createElement('i');inner.style.backgroundImage='url('+url+')';
+      if(h){sdiv.style.top=(k*100/n)+'%';sdiv.style.height='calc('+(100/n)+'% + 1px)';inner.style.top=(-k*100)+'%';inner.style.height=(n*100)+'%';sdiv.style.setProperty('--from',(k%2?'102%':'-102%'))}
+      else{sdiv.style.left=(k*100/n)+'%';sdiv.style.width='calc('+(100/n)+'% + 1px)';inner.style.left=(-k*100)+'%';inner.style.width=(n*100)+'%'}
+      sdiv.appendChild(inner);frag.appendChild(sdiv);
+    }
+    el.insertBefore(frag,el.firstChild);
+    if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){el.classList.add('in');o.disconnect();setTimeout(function(){el.classList.add('live')},1400)}},{threshold:.2});o.observe(el)}else el.classList.add('in');
+    if(el.classList.contains('sl-h')&&!reduce&&matchMedia('(pointer:fine)').matches){
+      var ss=el.querySelectorAll('.s');
+      el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5;ss.forEach(function(sd,k){sd.style.setProperty('--off',(x*(k%2?-1:1)*(10+k*3)).toFixed(1))})});
+      el.addEventListener('pointerleave',function(){ss.forEach(function(sd){sd.style.setProperty('--off',0)})});
+    }
+  });
+
+  /* ---------- film strip (01) ---------- */
+  var film=document.getElementById('film-01'), ft=document.getElementById('film-track'), fb=document.getElementById('film-bar'), fn=document.getElementById('film-n'), frs=[].slice.call(ft.querySelectorAll('.film__fr'));
+  var filmOn=function(){return !reduce&&matchMedia('(min-width:821px)').matches};
+  function filmUpdate(){
+    if(!filmOn()){ft.style.transform='';return}
+    var r=film.getBoundingClientRect(), total=film.offsetHeight-innerHeight, pr=Math.min(1,Math.max(0,-r.top/total));
+    var dist=ft.scrollWidth-innerWidth+80;
+    ft.style.transform='translate3d('+(-pr*dist)+'px,0,0)';fb.style.transform='scaleX('+pr+')';
+    fn.textContent='0'+Math.min(frs.length,1+Math.floor(pr*frs.length*0.999));
+    frs.forEach(function(f){var b=f.getBoundingClientRect(),c=(b.left+b.width/2-innerWidth/2)/innerWidth;f.firstElementChild.style.transform='scale(1.12) translateX('+(c*-6)+'%)'});
+  }
+
+  /* ---------- scrollytelling (02) ---------- */
+  var sty=document.getElementById('sty-02'), stImgs=[].slice.call(sty.querySelectorAll('.sty__img')), stSteps=[].slice.call(sty.querySelectorAll('.sty__step')), stTicks=[].slice.call(sty.querySelectorAll('.sty__ticks i')), stCur=0, stFrame=sty.querySelector('.sty__frame');
+  stSteps[0].classList.add('on');
+  stSteps.forEach(function(st,k){st.addEventListener('click',function(){if(matchMedia('(max-width:860px)').matches)stShow(k)})});
+  function stShow(i){if(i===stCur)return;stImgs.forEach(function(im,k){im.classList.toggle('was',k===stCur);im.classList.toggle('on',k===i)});stSteps.forEach(function(st,k){st.classList.toggle('on',k===i)});stTicks.forEach(function(t,k){t.classList.toggle('on',k===i)});stCur=i;if(!reduce){stFrame.classList.add('flash');setTimeout(function(){stFrame.classList.remove('flash')},380)}}
+  function styUpdate(){if(matchMedia('(max-width:860px)').matches)return;var best=0,bd=1e9;stSteps.forEach(function(st,k){var b=st.getBoundingClientRect(),d=Math.abs(b.top+b.height/2-innerHeight/2);if(d<bd){bd=d;best=k}});stShow(best)}
+  var lastY2=-1;(function loop2(){if(scrollY!==lastY2){lastY2=scrollY;filmUpdate();styUpdate()}requestAnimationFrame(loop2)})();
+  addEventListener('resize',function(){filmUpdate();styUpdate()});
+
+
+  /* ---------- 05 sticky stack ---------- */
+  (function(){
+    var cards=[].slice.call(document.querySelectorAll('.stk__card'));if(!cards.length||reduce)return;
+    function up(){var vh=innerHeight;cards.forEach(function(c,i){var nx=cards[i+1],r=c.getBoundingClientRect();
+      c.style.setProperty('--zi',(1.06-0.06*Math.min(1,Math.max(0,1-r.top/vh))).toFixed(3));
+      if(!nx){c.style.setProperty('--s',1);c.style.setProperty('--b',1);return}
+      var nr=nx.getBoundingClientRect(),p=Math.min(1,Math.max(0,(r.bottom-nr.top)/r.height));
+      c.style.setProperty('--s',(1-p*.07).toFixed(3));c.style.setProperty('--b',(1-p*.45).toFixed(3))})}
+    var ly=-1;(function lp(){if(scrollY!==ly){ly=scrollY;up()}requestAnimationFrame(lp)})();addEventListener('resize',up);
+  })();
+  /* glass shine */
+  if(matchMedia('(pointer:fine)').matches)document.addEventListener('pointermove',function(e){var g=e.target.closest&&e.target.closest('.card,.glass');if(!g)return;var r=g.getBoundingClientRect();g.style.setProperty('--mx',(e.clientX-r.left)+'px');g.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
+
+  /* restore language */
+  var saved=null;try{saved=localStorage.getItem('jcm-lang')}catch(e){}
+  setPair(0);setLang(saved==='en'?'en':'es');
+})();
+</script>
+
+</body>
+</html>
